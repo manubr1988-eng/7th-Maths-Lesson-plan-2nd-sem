@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="kn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7ನೇ ತರಗತಿ ಕನ್ನಡ ಮಾಧ್ಯಮ ಗಣಿತ ಭಾಗ 2 — ಸಂಪಾದಿಸಬಹುದಾದ 5E ಪಾಠಯೋಜನೆಗಳು</title>
+<style>
+:root{--forest:#174e45;--forest-dark:#0d342f;--gold:#edbd55;--ink:#25312e;--paper:#fffefa;--wash:#f1f7f4;--line:#cbdad3;--muted:#687771;--green:#27744e;--blue:#315f80;--warn:#fff4d8}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(120deg,#eaf2ed 0,#fbfaf6 50%,#f0e8d7 100%);color:var(--ink);font-family:"Noto Sans Kannada","Nirmala UI","Tunga",system-ui,sans-serif;font-size:15px;line-height:1.55}button,input,select,textarea{font:inherit}button{cursor:pointer}.topbar{position:sticky;top:0;z-index:20;background:linear-gradient(112deg,var(--forest-dark),var(--forest));border-bottom:3px solid var(--gold);padding:12px 18px;color:#fff;box-shadow:0 3px 14px #102e2840}.topbar-inner{max-width:1460px;margin:auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap}.brand{display:flex;gap:11px;align-items:center;margin-right:auto}.crest{width:44px;height:44px;border:1px solid #f4dc9b;border-radius:50%;display:grid;place-items:center;font-size:23px;background:#ffffff12}.brand h1{font-family:"Noto Serif Kannada","Nirmala UI","Tunga",serif;font-size:19px;line-height:1.25;margin:0}.brand p{margin:2px 0 0;font-size:11px;color:#f4dda6}.save-status{font-size:12px;color:#f9e5b5}.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.btn{border:1px solid transparent;border-radius:7px;padding:8px 12px;font-weight:700;font-size:13px;transition:.18s}.btn:hover{transform:translateY(-1px);filter:brightness(1.04)}.btn.gold{background:var(--gold);color:#302400}.btn.light{background:#fff;color:var(--forest)}.btn.outline{background:transparent;color:#fff;border-color:#ffffff99}.btn.danger{background:#a63e3e;color:#fff}.btn.small{padding:6px 9px;font-size:12px}.app{max-width:1460px;margin:18px auto 48px;padding:0 16px}.hero{background:var(--paper);border:1px solid var(--line);border-left:7px solid var(--forest);border-radius:12px;padding:18px 20px;display:flex;gap:20px;align-items:center;justify-content:space-between;box-shadow:0 6px 18px #203d2c12;margin-bottom:15px}.hero h2{font-family:"Noto Serif Kannada","Nirmala UI","Tunga",serif;color:var(--forest);font-size:22px;margin:0 0 4px}.hero p{margin:0;color:var(--muted);font-size:13px}.hero .edition-warning{margin-top:9px;padding:9px 11px;background:var(--warn);border:1px solid #e5d29d;border-radius:7px;color:#584923;font-size:12px}.hero details{margin-top:7px}.hero summary{font-weight:800;cursor:pointer;color:var(--forest-dark)}.source-links{display:flex;gap:6px 14px;flex-wrap:wrap;margin-top:7px}.source-links a{color:#315f80;font-weight:700}.badge-row{display:flex;gap:8px;flex-wrap:wrap}.badge{white-space:nowrap;border-radius:18px;padding:4px 10px;background:#f5e8c6;color:#4a360c;font-size:12px;font-weight:700}.badge.green{background:#deefe5;color:#15583b}.control-panel,.school-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:0 4px 14px #203d2c0c;margin-bottom:15px}.control-panel{display:flex;align-items:end;gap:12px;flex-wrap:wrap}.control-panel .field{min-width:250px;flex:1}.field{display:flex;flex-direction:column;gap:4px}.field label{font-size:12px;font-weight:800;color:var(--forest-dark)}input,select,textarea{width:100%;border:1px solid #c8d5ce;border-radius:6px;color:var(--ink);background:#fffefa;padding:7px 8px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--forest);box-shadow:0 0 0 2px #21635220}textarea{resize:vertical;min-height:48px;line-height:1.45}.school-card h2{font-family:"Noto Serif Kannada","Nirmala UI","Tunga",serif;color:var(--forest);font-size:18px;margin:0 0 12px;padding-bottom:7px;border-bottom:2px solid var(--gold)}.grid{display:grid;grid-template-columns:repeat(4,minmax(150px,1fr));gap:11px}.plans-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:22px 2px 10px}.plans-head h2{font-family:"Noto Serif Kannada","Nirmala UI","Tunga",serif;color:var(--forest);margin:0;font-size:21px}.count{font-size:13px;font-weight:700;color:var(--green);background:#e4f0ea;padding:4px 10px;border-radius:16px}.lesson-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:17px 18px 20px;box-shadow:0 5px 18px #1f3b2a10;margin-bottom:22px;break-after:page}.lesson-head{display:flex;align-items:center;gap:12px;justify-content:space-between;border-bottom:2px solid var(--gold);padding-bottom:11px;margin-bottom:13px}.lesson-title{display:flex;gap:10px;align-items:center}.lesson-title .no{background:var(--forest);color:#fff;border-radius:18px;padding:4px 10px;font-size:12px;font-weight:bold;white-space:nowrap}.lesson-title h3{font-family:"Noto Serif Kannada","Nirmala UI","Tunga",serif;font-size:22px;color:var(--forest);margin:0}.actions{display:flex;gap:6px;flex-wrap:wrap}.meta-grid{display:grid;grid-template-columns:1.45fr .85fr 1.35fr .8fr 1fr;gap:10px;margin-bottom:12px}.overview{display:grid;grid-template-columns:1.45fr 1.8fr 1.15fr;gap:10px;margin:12px 0}.info-block{background:var(--wash);border:1px solid #d7e3dc;border-radius:8px;padding:9px 10px;margin-bottom:7px}.info-block:last-child{margin-bottom:0}.info-block strong{color:var(--forest);font-size:12px;display:block;margin-bottom:3px}.info-block textarea{border-color:#d0ddd5;background:#fffefa;min-height:64px;font-size:13px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:8px}.plan-table{width:100%;border-collapse:collapse;min-width:1120px;font-size:12px}.plan-table th,.plan-table td{border:1px solid var(--line);vertical-align:top;padding:5px}.plan-table th{background:#e4eee7;color:#173d35;font-weight:800;text-align:center;line-height:1.35}.plan-table textarea{border:0;background:transparent;min-height:76px;padding:3px;font-size:12px}.plan-table textarea:focus{box-shadow:inset 0 0 0 1px var(--gold)}.stage{width:120px;text-align:center;background:#f3f7ef;color:var(--forest);font-weight:800}.stage span{display:block;font-size:10px;color:var(--muted);font-weight:600;margin-top:3px}.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.post-grid textarea{min-height:59px;font-size:13px}.assessment{margin-top:12px;border:1px solid #d3e1d7;border-radius:8px;background:#f5faf6;padding:11px}.assessment h4{color:var(--green);font-size:14px;margin:0 0 8px}.rubric{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.rubric div{border:1px solid #cde0d3;border-radius:6px;background:#fff;padding:7px}.rubric b{color:#15583b;font-size:12px;display:block}.rubric span{font-size:11px;color:#59675e}.sign-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:15px}.sign-row input{border:none;border-bottom:1px solid #6b756f;border-radius:0;background:transparent}.empty{background:var(--paper);border:1px dashed var(--line);border-radius:10px;padding:28px;text-align:center;color:var(--muted)}.print-note{font-size:11px;color:#716b5e;margin-top:8px;text-align:right}.file-input{display:none}.footer{text-align:center;color:#65716a;font-size:12px;margin-top:25px}.resource-footer{text-align:center;color:#665f54;font-size:12px;margin-top:24px;padding:14px 10px 4px;letter-spacing:.15px}.resource-footer a{color:var(--forest);font-weight:800;text-decoration:none;cursor:pointer}.resource-footer .sep{color:#b58b35;padding:0 6px}.resource-footer a:hover{text-decoration:underline}.compact-mode .lesson-card{padding:12px}.compact-mode .overview{display:none}.compact-mode .post-grid{grid-template-columns:1fr 1fr}.compact-mode .plan-table textarea{min-height:52px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.meta-grid{grid-template-columns:1fr 1fr}.overview,.post-grid{grid-template-columns:1fr}.hero{align-items:flex-start;flex-direction:column}.lesson-head{align-items:flex-start;flex-direction:column}.topbar{position:relative}.rubric{grid-template-columns:1fr 1fr}}@media(max-width:530px){body{font-size:14px}.app{padding:0 9px}.grid,.meta-grid{grid-template-columns:1fr}.lesson-title h3{font-size:19px}.brand h1{font-size:16px}.toolbar{width:100%}.toolbar .btn{flex:1}.sign-row{grid-template-columns:1fr}}
+@media print{@page{size:A4 landscape;margin:8mm 8mm 14mm 8mm}body{background:#fff;font-size:10px}.topbar,.hero,.control-panel,.screen-only,.actions,.print-note,.footer{display:none!important}.resource-footer{display:block!important;position:fixed;bottom:2mm;left:0;right:0;padding:2px 0 0;background:#fff;color:#444;font-size:9px;border-top:1px solid #aaa;z-index:9999}.resource-footer a{color:#174e45;text-decoration:underline;font-weight:800}.app{max-width:none;margin:0;padding:0}.school-card{box-shadow:none;padding:8px 10px;margin:0 0 7px;border-color:#777}.school-card h2{font-size:15px;margin-bottom:5px}.grid{gap:5px}.field label{font-size:9px}.field input,.field select{font-size:10px;padding:2px 3px}.plans-head{margin:5px 0}.plans-head h2{font-size:15px}.lesson-card{box-shadow:none;border:0;border-radius:0;padding:4px 0;margin:0;break-after:page}.lesson-card:last-child{break-after:auto}.lesson-head{padding-bottom:5px;margin-bottom:6px}.lesson-title h3{font-size:17px}.lesson-title .no{font-size:9px;padding:2px 6px}.meta-grid{gap:5px;margin-bottom:5px}.overview{gap:5px;margin:5px 0}.info-block{padding:4px}.info-block strong{font-size:9px}.info-block textarea{min-height:36px!important;font-size:9px}.plan-table{font-size:9px}.plan-table th,.plan-table td{padding:2px}.plan-table textarea{font-size:9px;min-height:37px!important}.stage{width:76px}.stage span{font-size:8px}.post-grid{gap:5px;margin-top:5px}.post-grid textarea{font-size:9px;min-height:35px}.assessment{margin-top:5px;padding:5px}.assessment h4{font-size:10px;margin-bottom:3px}.rubric{gap:3px}.rubric div{padding:3px}.rubric b{font-size:9px}.rubric span{font-size:8px}.sign-row{margin-top:8px;gap:14px}.sign-row input{font-size:9px;padding:2px}.lesson-card textarea{border:none!important;resize:none}.count{display:none}}
+</style>
+</head>
+<body>
+<header class="topbar screen-only"><div class="topbar-inner"><div class="brand"><div class="crest" aria-hidden="true">📐</div><div><h1>ಪಾಠಯೋಜನೆ ನಿರ್ಮಾಪಕ</h1><p>7ನೇ ತರಗತಿ • ಕನ್ನಡ ಮಾಧ್ಯಮ • ಗಣಿತ ಭಾಗ 2 • 2026–27</p></div></div><span id="saveStatus" class="save-status">● ಸ್ವಯಂ ಸಂಗ್ರಹ ಸಿದ್ಧ</span><div class="toolbar"><button class="btn gold" onclick="loadAllLessons()">▣ ಎಲ್ಲಾ ಅಧ್ಯಾಯಗಳನ್ನು ಸೇರಿಸಿ</button><button class="btn light" onclick="printAll()">▤ ಮುದ್ರಣ / ಪಿಡಿಎಫ್ — A4 ಅಡ್ಡ ವಿನ್ಯಾಸ</button><button id="compactBtn" class="btn outline" onclick="toggleCompact()">▤ ಸಂಕ್ಷಿಪ್ತ ನೋಟ</button></div></div></header>
+<main class="app">
+<section class="hero screen-only"><div><h2>ಭಾಗ 2 — ಅಧ್ಯಾಯಗಳು 9–15</h2><p>ಏಳು ಸಂಪಾದಿಸಬಹುದಾದ 5E ಪಾಠಯೋಜನೆಗಳು. ಕನ್ನಡ ಅಧ್ಯಾಯಪಟ್ಟಿಯ ಕ್ರಮವನ್ನು ಅನುಸರಿಸಿ ವಿಷಯಗಳನ್ನು ರೂಪಿಸಲಾಗಿದೆ; ಪುಟ ಮತ್ತು ಬೋಧನಾ ಅವಧಿಯನ್ನು ನಿಮ್ಮ ಪುಸ್ತಕ ಹಾಗೂ ಸ್ಥಳೀಯ ವಾರ್ಷಿಕ ಯೋಜನೆಗೆ ಅನುಗುಣವಾಗಿ ಸಂಪಾದಿಸಿ.</p><p class="edition-warning"><strong>ಮೂಲ ಪರಿಶೀಲನೆ:</strong> ನೀವು ನೀಡಿದ ಕರ್ನಾಟಕದ ಅಧಿಕೃತ 2026–27 ಕನ್ನಡ ಗಣಿತ ಭಾಗ 2 ಪಿಡಿಎಫ್ ಈ ಪರಿಶೀಲನೆಯಲ್ಲಿ ತೆರೆಯಲಿಲ್ಲ. ಕನ್ನಡ ಶೀರ್ಷಿಕೆಗಳನ್ನು ಲಭ್ಯವಿರುವ ದ್ವಿತೀಯ ಕನ್ನಡ ಅಧ್ಯಾಯಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಕೊಂಡಿದ್ದೇವೆ; ವಿಷಯಗಳ ಕ್ರಮ ಮತ್ತು ಗಣಿತ ಕಲ್ಪನೆಗಳನ್ನು ಅಧಿಕೃತ ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಗಣಿತ ಪ್ರಕಾಶ ಭಾಗ 2 ಹಾಗೂ ಅದರ ಅಧ್ಯಾಯ ಪಿಡಿಎಫ್‌ಗಳೊಂದಿಗೆ ಹೋಲಿಸಿದ್ದೇವೆ. ಕರ್ನಾಟಕದ ಕನ್ನಡ ಪುಸ್ತಕದಲ್ಲಿನ ನಿಖರ ಉದಾಹರಣೆ, ಪದಬಳಕೆ, ಉಪವಿಷಯಗಳ ಕ್ರಮ, ಪುಟಸಂಖ್ಯೆ ಮತ್ತು ಅವಧಿಯನ್ನು ಬೋಧನೆಗೆ ಮೊದಲು ಪರಿಶೀಲಿಸಿ. ಪುಟ/ಅವಧಿಯನ್ನು ಊಹಿಸಿ ನೀಡಿಲ್ಲ.</p><details><summary>ಮೂಲಗಳು ಮತ್ತು ಪರಿಶೀಲನಾ ಕೊಂಡಿಗಳು</summary><div class="source-links"><a href="https://textbooks.karnataka.gov.in/uploads/Karnataka_Textbook_Society/2026-27%20TEXTBOOKS/7th%20STD/KANNADA%20MEDIUM%20TEXTBOOKS/7th%20Kannada%20Maths%20Part%20-%202%202026-27.pdf" target="_blank" rel="noopener noreferrer">ಕರ್ನಾಟಕ ಅಧಿಕೃತ 2026–27 ಕನ್ನಡ ಪಿಡಿಎಫ್</a><a href="https://textbooks.karnataka.gov.in/en" target="_blank" rel="noopener noreferrer">ಕರ್ನಾಟಕ ಪಠ್ಯಪುಸ್ತಕ ಸಂಘದ ಸೂಚಿ</a><a href="https://www.selfstudys.com/books/karnataka/state-books/class-7th/mathematics/9437" target="_blank" rel="noopener noreferrer">ಕನ್ನಡ ಅಧ್ಯಾಯಪಟ್ಟಿ (ದ್ವಿತೀಯ ಮೂಲ)</a><a href="https://ncert.nic.in/textbook/pdf/gegp2ps.pdf" target="_blank" rel="noopener noreferrer">ಅಧಿಕೃತ ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಭಾಗ 2 — ಸಂಪೂರ್ಣ ಪಠ್ಯ</a><a href="https://ncert.nic.in/textbook/pdf/gegp201.pdf" target="_blank" rel="noopener noreferrer">ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಅಧ್ಯಾಯ 1 — ಸರ್ವಸಮತೆ</a><a href="https://ncert.nic.in/textbook/pdf/gegp202.pdf" target="_blank" rel="noopener noreferrer">ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಅಧ್ಯಾಯ 2 — ಪೂರ್ಣಾಂಕಗಳು</a><a href="https://ncert.nic.in/textbook/pdf/gegp203.pdf" target="_blank" rel="noopener noreferrer">ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಅಧ್ಯಾಯ 3 — ಸಾಮಾನ್ಯ ಅಪವರ್ತನ/ಗುಣಿತ</a><a href="https://ncert.nic.in/textbook/pdf/gegp204.pdf" target="_blank" rel="noopener noreferrer">ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಅಧ್ಯಾಯ 4 — ದಶಮಾಂಶಗಳು</a><a href="https://ncert.nic.in/textbook/pdf/gegp205.pdf" target="_blank" rel="noopener noreferrer">ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಅಧ್ಯಾಯ 5 — ದತ್ತಾಂಶ</a><a href="https://ncert.nic.in/textbook/pdf/gegp206.pdf" target="_blank" rel="noopener noreferrer">ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಅಧ್ಯಾಯ 6 — ರಚನೆಗಳು/ಟೈಲಿಂಗ್</a><a href="https://ncert.nic.in/textbook/pdf/gegp207.pdf" target="_blank" rel="noopener noreferrer">ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಅಧ್ಯಾಯ 7 — ಅವ್ಯಕ್ತ</a></div></details></div><div class="badge-row"><span class="badge">7 ಸಂಪಾದಿಸಬಹುದಾದ ಯೋಜನೆಗಳು</span><span class="badge green">5E ಕಲಿಕಾ ಮಾದರಿ</span><span class="badge">ಅಧ್ಯಾಯ 9–15</span><span class="badge">A4 ಅಡ್ಡ ವಿನ್ಯಾಸ</span></div></section>
+<section class="school-card" id="schoolInfo"><h2>ಶಾಲೆಯ ಮಾಹಿತಿ</h2><div class="grid"><div class="field"><label for="schoolName">ಶಾಲೆಯ ಹೆಸರು</label><input id="schoolName" placeholder="ಶಾಲೆಯ ಹೆಸರು"></div><div class="field"><label for="taluk">ತಾಲೂಕು</label><input id="taluk" placeholder="ತಾಲೂಕು"></div><div class="field"><label for="district">ಜಿಲ್ಲೆ</label><input id="district" placeholder="ಜಿಲ್ಲೆ"></div><div class="field"><label for="academicYear">ಶೈಕ್ಷಣಿಕ ವರ್ಷ</label><input id="academicYear" value="2026–27"></div><div class="field"><label for="className">ತರಗತಿ</label><input id="className" value="7ನೇ ತರಗತಿ"></div><div class="field"><label for="subject">ವಿಷಯ</label><input id="subject" value="ಗಣಿತ — ಭಾಗ 2"></div><div class="field"><label for="teacherName">ಶಿಕ್ಷಕರ ಹೆಸರು</label><input id="teacherName" placeholder="ಶಿಕ್ಷಕರ ಹೆಸರು"></div><div class="field"><label for="schoolDate">ದಿನಾಂಕ / ವಾರ</label><input id="schoolDate" type="date"></div></div></section>
+<section class="control-panel screen-only"><div class="field"><label for="lessonPicker">ಸೇರಿಸಬೇಕಾದ ಅಧ್ಯಾಯ</label><select id="lessonPicker"></select></div><button class="btn gold" onclick="addSelectedLesson()">＋ ಅಧ್ಯಾಯ ಸೇರಿಸಿ</button><button class="btn light" onclick="downloadBackup()">⇩ ಬ್ಯಾಕಪ್ ಇಳಿಸಿಕೊಳ್ಳಿ</button><button class="btn light" onclick="document.getElementById('restoreFile').click()">⇧ ಬ್ಯಾಕಪ್ ಮರುಸ್ಥಾಪಿಸಿ</button><input class="file-input" id="restoreFile" type="file" accept="application/json" onchange="restoreBackup(event)"><button class="btn danger" onclick="clearPlans()">⌫ ಸೇರಿಸಿದ ಯೋಜನೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ</button></section>
+<div class="plans-head"><h2>ಅಧ್ಯಾಯವಾರು ಪಾಠಯೋಜನೆಗಳು</h2><span id="planCount" class="count">7ರಲ್ಲಿ 7 ಯೋಜನೆಗಳು</span></div><section id="plans"></section>
+<div class="footer screen-only">ನಿಮ್ಮ ಬದಲಾವಣೆಗಳು ಈ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಂಗ್ರಹವಾಗುತ್ತವೆ. ಶಾಲೆಯ ವಿವರಗಳನ್ನು ತುಂಬಿ, ಯೋಜನೆಗಳನ್ನು A4 ಅಡ್ಡ ವಿನ್ಯಾಸ ಪಿಡಿಎಫ್ ಆಗಿ ಮುದ್ರಿಸಬಹುದು; ಬ್ಯಾಕಪ್ ಇಳಿಸಿಕೊಂಡು ಬೇರೆ ಸಾಧನದಲ್ಲಿ ಮರುಸ್ಥಾಪಿಸಬಹುದು.</div>
+</main>
+<footer class="resource-footer">
+  <a id="resourceCenterLink" class="resource-link" href="https://bilingualmediumschools.blogspot.com/" target="_blank" rel="noopener noreferrer">SCHOOL RESOURCE CENTER</a><span class="sep" aria-hidden="true">|</span><a id="websiteNameLink" class="resource-link" href="https://bilingualmediumschools.blogspot.com/" target="_blank" rel="noopener noreferrer">BILINGUAL MEDIUM SCHOOLS</a>
+</footer>
+<script>
+const LESSONS = [
+  {
+    "id": "grade7-kn-maths-p2-ch09-geometric-twins",
+    "number": "ಅಧ್ಯಾಯ 9",
+    "title": "ಜ್ಯಾಮಿತೀಯ ಅವಳಿಗಳು",
+    "genre": "ಜ್ಯಾಮಿತಿ • ಸರ್ವಸಮ ಆಕೃತಿಗಳು ಮತ್ತು ತ್ರಿಭುಜಗಳ ಸರ್ವಸಮತೆ",
+    "author": "ಭಾಗ 2ರ ವಿಷಯಾಧಾರ: ಅಧಿಕೃತ ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಗಣಿತ ಪ್ರಕಾಶ (ಆಂಗ್ಲ); ಕನ್ನಡ ಆವೃತ್ತಿ ಪರಿಶೀಲಿಸಿ",
+    "pages": "ಕನ್ನಡ ಪಿಡಿಎಫ್ ಪರಿಶೀಲಿಸಿ ಭರ್ತಿ ಮಾಡಿ",
+    "periods": "ಸ್ಥಳೀಯ ವಾರ್ಷಿಕ ಯೋಜನೆಯಂತೆ ಭರ್ತಿ ಮಾಡಿ",
+    "theme": "ಎರಡು ಆಕೃತಿಗಳನ್ನು ಒಂದರ ಮೇಲೊಂದು ಇಟ್ಟಾಗ ನಿಖರವಾಗಿ ಹೊಂದಿದರೆ ಅವು ಸರ್ವಸಮ. ಈ ಅಧ್ಯಾಯದಲ್ಲಿ ತ್ರಿಭುಜಗಳ ಅನುಗುಣ ಶೃಂಗಗಳು/ಬಾಹುಗಳು/ಕೋನಗಳು, SSS, SAS, ASA, AAS ಮತ್ತು RHS ಸರ್ವಸಮತಾ ಷರತ್ತುಗಳು ಹಾಗೂ ಕೇವಲ ಕೋನಗಳು ಅಥವಾ SSA ಮಾಹಿತಿ ಯಾಕೆ ಎಲ್ಲ ಸಂದರ್ಭದಲ್ಲೂ ಸರ್ವಸಮತೆಯನ್ನು ಖಚಿತಪಡಿಸುವುದಿಲ್ಲ ಎಂಬುದನ್ನು ನಿರ್ಮಾಣ ಮತ್ತು ಕಾರಣದ ಮೂಲಕ ಕಲಿಯುತ್ತಾರೆ.",
+    "outcomes": "• ಆಕೃತಿಗಳನ್ನು ಮೇಲಿಟ್ಟು ಹೊಂದಿಸುವ ಮೂಲಕ ಸರ್ವಸಮತೆಯನ್ನು ಗುರುತಿಸುತ್ತಾರೆ.\n• ಅನುಗುಣ ಶೃಂಗಗಳ ಕ್ರಮವನ್ನು ಸರಿಯಾಗಿ ಹೊಂದಿಸಿ ಸರ್ವಸಮತೆಯ ಸಂಕೇತ ಬರೆಯುತ್ತಾರೆ.\n• SSS, SAS, ASA/AAS ಮತ್ತು RHS ಷರತ್ತುಗಳಲ್ಲಿ ಸೂಕ್ತವಾದುದನ್ನು ಬಳಸಿ ತ್ರಿಭುಜಗಳನ್ನು ಹೋಲಿಸುತ್ತಾರೆ.\n• AAA ಅಥವಾ SSA ಮಾತ್ರದಿಂದ ಸರ್ವಸಮತೆ ಖಚಿತವಲ್ಲ ಎಂಬುದನ್ನು ಉದಾಹರಣೆಯಿಂದ ವಿವರಿಸುತ್ತಾರೆ.\n• ಕೊಟ್ಟ ಮಾಹಿತಿ ಸಾಕೇ ಎಂದು ಚಿತ್ರ/ನಿರ್ಮಾಣ ಮತ್ತು ಕಾರಣದೊಂದಿಗೆ ನಿರ್ಧರಿಸುತ್ತಾರೆ.",
+    "prereq": "ತ್ರಿಭುಜದ ಶೃಂಗ, ಬಾಹು ಮತ್ತು ಕೋನಗಳ ಹೆಸರು; ಕೋನಮಾಪಕ/ಮಾಪಕ ಬಳಕೆ; ತ್ರಿಭುಜದ ಕೋನಗಳ ಮೊತ್ತ 180°; ಸಮಾನ ಉದ್ದ ಮತ್ತು ಸಮಾನ ಕೋನದ ಸಂಕೇತ.",
+    "values": "ನಿಖರ ಗಮನ • ಸಾಕ್ಷ್ಯಾಧಾರಿತ ನಿರ್ಣಯ • ವಿಭಿನ್ನ ಉತ್ತರಗಳನ್ನು ಪರಿಶೀಲಿಸುವುದು • ಗುಂಪಿನಲ್ಲಿ ಆಲೋಚನೆ ಹಂಚಿಕೊಳ್ಳುವುದು",
+    "focus": "ಸರ್ವಸಮ ಆಕೃತಿಗಳು; ಅನುಗುಣ ಭಾಗಗಳು; ತ್ರಿಭುಜ ಸರ್ವಸಮತೆ; SSS, SAS, ASA, AAS, RHS; SSA ಮತ್ತು AAA ಮಿತಿಗಳು; ಅನುಗುಣತೆಯ ಸರಿಯಾದ ಕ್ರಮ.",
+    "project": "ಅಳತೆ ಕಾರ್ಡ್‌ಗಳಿಂದ ಸಿಗುವ ಮಾಹಿತಿಯ ಪ್ರಕಾರ ತ್ರಿಭುಜ ಜೋಡಿಗಳನ್ನು ನಿರ್ಮಿಸಿ. ಯಾವ ಕಾರ್ಡ್‌ಗಳು ಒಂದೇ ತ್ರಿಭುಜವನ್ನು ನಿರ್ಧರಿಸುತ್ತವೆ, ಯಾವವು ಹಲವು ಸಾಧ್ಯತೆ ಬಿಡುತ್ತವೆ ಎಂಬುದನ್ನು ಚಿತ್ರ, ಅಳತೆ ಮತ್ತು ಸರ್ವಸಮತಾ ಕಾರಣದೊಂದಿಗೆ ಪ್ರದರ್ಶಿಸಿ.",
+    "homework": "ಮೂರು ತ್ರಿಭುಜ ಜೋಡಿಗಳನ್ನು ಬಿಡಿಸಿ ಅಥವಾ ಕತ್ತರಿಸಿ. ಪ್ರತಿಯೊಂದರ ಅನುಗುಣ ಶೃಂಗಗಳನ್ನು ಬಣ್ಣದಿಂದ ಗುರುತಿಸಿ; ಸರ್ವಸಮವಾಗಿದ್ದರೆ ಬಳಸಿದ ಷರತ್ತನ್ನು ಬರೆಯಿರಿ, ಇಲ್ಲದಿದ್ದರೆ ಕಾರಣ ಸೂಚಿಸಿ.",
+    "support": "ಬಣ್ಣದ ತ್ರಿಭುಜ ಕತ್ತರಿಕೆಗಳು, ಅನುಗುಣ ಶೃಂಗಗಳಿಗೆ ಒಂದೇ ಬಣ್ಣದ ಚುಕ್ಕೆಗಳು ಮತ್ತು ಮುಂಚಿತವಾಗಿ ಗುರುತಿಸಿದ ಕೋನ/ಬಾಹುಗಳ ಕಾರ್ಡ್ ನೀಡಿ. ಸಂಕೇತ ಬರೆಯುವ ಮೊದಲು ಆಕೃತಿಗಳನ್ನು ತಿರುಗಿಸಿ/ಮೇಲಿಟ್ಟು ಹೊಂದಿಸಲು ಅವಕಾಶ ಕೊಡಿ.",
+    "extension": "ಒಂದು ಷರತ್ತನ್ನು ಬದಲಿಸಿದರೆ ತ್ರಿಭುಜದ ಸಾಧ್ಯತೆ ಹೇಗೆ ಬದಲಾಗುತ್ತದೆ ಎಂದು ಪರಿಶೀಲಿಸಿ. SSA ಮಾಹಿತಿಗೆ ಎರಡು ವಿಭಿನ್ನ ತ್ರಿಭುಜಗಳನ್ನು ನಿರ್ಮಿಸಿ, ಎರಡರಲ್ಲೂ ನೀಡಿದ ಅಳತೆಗಳು ಒಂದೇ ಇದ್ದರೂ ಸರ್ವಸಮವಲ್ಲ ಎಂದು ವಿವರಿಸಿ.",
+    "note": "‘ಒಂದೇ ಆಕಾರ’ ಮತ್ತು ‘ಒಂದೇ ಆಕಾರ ಹಾಗೂ ಗಾತ್ರ’ ನಡುವಿನ ವ್ಯತ್ಯಾಸವನ್ನು ಸ್ಪಷ್ಟಪಡಿಸಿ. SSA ಸಾಮಾನ್ಯ ಸರ್ವಸಮತಾ ಷರತ್ತಲ್ಲ; ಕೋನ/ಬಾಹುಗಳ ಹೊಂದಾಣಿಕೆಯ ಕ್ರಮವನ್ನು ಪಠ್ಯದಲ್ಲಿನ ಸಂಕೇತಗಳೊಂದಿಗೆ ಪರಿಶೀಲಿಸಿ.",
+    "stages": [
+      [
+        "ಎರಡು ಕಾಗದದ ತ್ರಿಭುಜಗಳನ್ನು ತೋರಿಸಿ: ಒಂದನ್ನು ತಿರುಗಿಸಿ/ತಿರುಗುಮುಖ ಮಾಡಿ ಮೇಲಿಟ್ಟು ಹೊಂದಿಸಿ. ‘ಯಾವ ಲಕ್ಷಣ ಇದ್ದಾಗ ಇವು ನಿಖರವಾಗಿ ಹೊಂದಿದವು ಎಂದು ಹೇಳಬಹುದು?’ ಎಂದು ಕೇಳಿ.",
+        "ಆಕೃತಿಗಳನ್ನು ಮೇಲಿಟ್ಟು ಹೊಂದಿಸಿ; ಆಕಾರ, ಗಾತ್ರ, ಬಾಹು ಮತ್ತು ಕೋನಗಳಲ್ಲಿ ಗಮನಿಸಿದುದನ್ನು ಜೋಡಿಯಾಗಿ ಹೇಳುತ್ತಾರೆ.",
+        "ಕಾಗದದ ತ್ರಿಭುಜ ಕತ್ತರಿಕೆಗಳು; ಫಲಕ; ಬಣ್ಣದ ಪೆನ್ಸಿಲ್",
+        "ಹೊಂದಿಕೆಗಾಗಿ ಆಕಾರವನ್ನೂ ಗಾತ್ರವನ್ನೂ ಪರಿಗಣಿಸುತ್ತಾರೆಯೇ?",
+        "ಸಮಾನ ಆಕಾರವನ್ನೇ ಸರ್ವಸಮ ಎಂದು ಕರೆಯುವ ಗೊಂದಲವಿದೆಯೇ ಎಂದು ಗಮನಿಸಿ."
+      ],
+      [
+        "ಗುಂಪುಗಳಿಗೆ ಬಾಹು/ಕೋನ ಅಳತೆ ಕಾರ್ಡ್ ನೀಡಿ. SSS, SAS, ASA ಮತ್ತು SSA ಮಾದರಿಗಳ ತ್ರಿಭುಜಗಳನ್ನು ಮಾಪಕ/ಕೋನಮಾಪಕದಿಂದ ನಿರ್ಮಿಸಿ ಪರಸ್ಪರ ಹೋಲಿಸುವಂತೆ ಮಾರ್ಗದರ್ಶಿಸಿ.",
+        "ಅಳತೆಗಳನ್ನು ಬಳಸಿ ತ್ರಿಭುಜ ನಿರ್ಮಿಸಿ; ತಿರುಗಿಸಿ ಹೊಂದಿಸಿ; ಒಂದೇ ಮಾಹಿತಿ ಹಲವು ತ್ರಿಭುಜ ಕೊಡುತ್ತದೆಯೇ ಎಂದು ದಾಖಲಿಸುತ್ತಾರೆ.",
+        "ಮಾಪಕ; ಕೋನಮಾಪಕ; ಕಾಗದ; ಅಳತೆ ಕಾರ್ಡ್; ಕತ್ತರಿ",
+        "ಯಾವ ಅಳತೆಗಳಿಂದ ಒಂದೇ ತ್ರಿಭುಜ ಸಿಗುತ್ತದೆ, ಯಾವಲ್ಲಿ ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಸಾಧ್ಯತೆ ಬರುತ್ತದೆ ಎಂದು ದಾಖಲಿಸುತ್ತಾರೆಯೇ?",
+        "ನಿರ್ಮಾಣದ ನಿಖರತೆ ಮತ್ತು ಅಳತೆಯ ಓದಿನಲ್ಲಿ ನೆರವು ಬೇಕಾದವರನ್ನು ಗುರುತಿಸಿ."
+      ],
+      [
+        "ಮೇಲಿಟ್ಟು ಹೊಂದಿಸುವ ಕಲ್ಪನೆಯಿಂದ ಸರ್ವಸಮತೆ ಮತ್ತು ಅನುಗುಣ ಭಾಗಗಳನ್ನು ಹೆಸರಿಸಿ. SSS/SAS/ASA/AAS/RHS ಷರತ್ತುಗಳನ್ನು ಮಾದರಿ ಚಿತ್ರದಲ್ಲಿ ಗುರುತಿಸಿ; AAA, SSA ಮಾಹಿತಿ ಯಾಕೆ ಸಾಕಾಗುವುದಿಲ್ಲ ಎಂದು ಚರ್ಚಿಸಿ.",
+        "ತ್ರಿಭುಜದ ಶೃಂಗಗಳ ಕ್ರಮ ಸರಿಪಡಿಸಿ; ಜೋಡಿ ಸರ್ವಸಮತೆ ಸಂಕೇತ ಬರೆಯುತ್ತಾರೆ; ಬಳಸಿದ ಷರತ್ತಿಗೆ ಕಾರಣ ನೀಡುತ್ತಾರೆ.",
+        "ಷರತ್ತುಗಳ ಚಿತ್ರಪಟ; ಬಣ್ಣದ ಚಾಕ್; ಫಲಕ; ಸರಳ ಪ್ರದರ್ಶನ ಹಾಳೆ",
+        "ಸರಿಯಾದ ಮಾನದಂಡ ಮತ್ತು ಅನುಗುಣ ಶೃಂಗಗಳ ಕ್ರಮ ಬಳಸಿ ಸಮರ್ಥಿಸುತ್ತಾರೆಯೇ?",
+        "ಸಂಕೇತವನ್ನು ಕೇವಲ ಕಂಠಪಾಠ ಮಾಡದೆ ಕೊಟ್ಟ ಅಳತೆಗಳಿಗೆ ಜೋಡಿಸಿರುವುದನ್ನು ಪರಿಶೀಲಿಸಿ."
+      ],
+      [
+        "‘ರಹಸ್ಯ ತ್ರಿಭುಜ’ ಕಾರ್ಡ್ ನೀಡಿ: ಕೆಲವು ಬಾಹು/ಕೋನ ಮಾತ್ರ ತಿಳಿದಿವೆ. ವಿದ್ಯಾರ್ಥಿಗಳು ಸಾಧ್ಯವಾದ ತ್ರಿಭುಜಗಳ ಸಂಖ್ಯೆ ಮತ್ತು ಸರ್ವಸಮತೆ ನಿರ್ಧರಿಸಿ ಕಾರಣ ಸಮರ್ಥಿಸುವಂತೆ ಕೇಳಿ.",
+        "ಗುಂಪು ತಮ್ಮ ನಿರ್ಮಾಣ/ಚಿತ್ರ ತೋರಿಸಿ; ಇನ್ನೊಂದು ಗುಂಪಿನ ಕಾರಣವನ್ನು ಪ್ರಶ್ನಿಸಿ ಪರಿಶೀಲಿಸುತ್ತಾರೆ.",
+        "ಮಿಸ್ಟರಿ ಕಾರ್ಡ್; ಜಾಲಪತ್ರ; ಮಾಪಕ/ಕೋನಮಾಪಕ",
+        "ನಿರ್ಣಯವನ್ನು ಚಿತ್ರ ಅಥವಾ ನಿರ್ಮಾಣದ ಸಾಕ್ಷಿಯಿಂದ ಸಮರ್ಥಿಸುತ್ತಾರೆಯೇ?",
+        "ತೆರೆದ ಪ್ರಶ್ನೆಗೆ ಹಲವು ವಾದಗಳನ್ನು ಹೋಲಿಸಲು ಸಾಕಷ್ಟು ಸಮಯ ನೀಡಿ."
+      ],
+      [
+        "ಎರಡು ತ್ರಿಭುಜಗಳ ಜೋಡಿ ನೀಡಿ: ಸರ್ವಸಮವೇ, ಯಾವ ಷರತ್ತು, ಅನುಗುಣ ಶೃಂಗಗಳ ಕ್ರಮ ಯಾವುದು ಎಂಬ ಮೂರು ಭಾಗದ ನಿರ್ಗಮನ ಕಾರ್ಯ ನೀಡಿ.",
+        "ಉತ್ತರ ಮತ್ತು ಒಂದು ಕಾರಣ ಬರೆಯುತ್ತಾರೆ; ‘SSA ಏಕೆ ಸಾಕಾಗುವುದಿಲ್ಲ?’ ಎಂಬ ಚಿಕ್ಕ ಪ್ರಶ್ನೆಗೆ ಉತ್ತರಿಸುತ್ತಾರೆ.",
+        "ನಿರ್ಗಮನ ಚೀಟಿ; ಸ್ವಪರಿಶೀಲನಾ ಪಟ್ಟಿ",
+        "ಮಾನದಂಡ, ಸಂಕೇತದ ಕ್ರಮ ಮತ್ತು ಕಾರಣವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ.",
+        "ಯಾವ ಷರತ್ತಿನಲ್ಲಿ ಮರುನಿರ್ಮಾಣ ಅಭ್ಯಾಸ ಬೇಕು ಎಂದು ಮುಂದಿನ ಪಾಠಕ್ಕೆ ದಾಖಲಿಸಿ."
+      ]
+    ]
+  },
+  {
+    "id": "grade7-kn-maths-p2-ch10-integers",
+    "number": "ಅಧ್ಯಾಯ 10",
+    "title": "ಪೂರ್ಣಾಂಕಗಳ ಮೇಲಿನ ಕ್ರಿಯೆಗಳು",
+    "genre": "ಸಂಖ್ಯಾಜ್ಞಾನ • ಪೂರ್ಣಾಂಕಗಳ ಗುಣಾಕಾರ ಮತ್ತು ಭಾಗಾಕಾರ",
+    "author": "ಭಾಗ 2ರ ವಿಷಯಾಧಾರ: ಅಧಿಕೃತ ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಗಣಿತ ಪ್ರಕಾಶ (ಆಂಗ್ಲ); ಕನ್ನಡ ಆವೃತ್ತಿ ಪರಿಶೀಲಿಸಿ",
+    "pages": "ಕನ್ನಡ ಪಿಡಿಎಫ್ ಪರಿಶೀಲಿಸಿ ಭರ್ತಿ ಮಾಡಿ",
+    "periods": "ಸ್ಥಳೀಯ ವಾರ್ಷಿಕ ಯೋಜನೆಯಂತೆ ಭರ್ತಿ ಮಾಡಿ",
+    "theme": "ಧನ ಮತ್ತು ಋಣ ಪೂರ್ಣಾಂಕಗಳನ್ನು ಗುಂಪು/ಟೋಕನ್ ಮಾದರಿ, ಶೂನ್ಯ ಜೋಡಿ ಮತ್ತು ಸಂಖ್ಯಾ ಮಾದರಿಗಳ ಮೂಲಕ ಗುಣಿಸುವ ಹಾಗೂ ಭಾಗಿಸುವ ಅರ್ಥವನ್ನು ರೂಪಿಸಲಾಗುತ್ತದೆ. ಚಿಹ್ನೆಗಳ ನಿಯಮವನ್ನು ಮಾದರಿಯಿಂದ ಕಂಡುಹಿಡಿದು, ಗುಣಾಕಾರ–ಭಾಗಾಕಾರದ ಪರಸ್ಪರ ಸಂಬಂಧದಿಂದ ಉತ್ತರ ಪರಿಶೀಲಿಸುವುದು ಈ ಅಧ್ಯಾಯದ ಕೇಂದ್ರ.",
+    "outcomes": "• ಧನ/ಋಣ ಪೂರ್ಣಾಂಕಗಳ ಗುಣಾಕಾರ ಮತ್ತು ಭಾಗಾಕಾರವನ್ನು ಮಾದರಿಯಿಂದ ವಿವರಿಸುತ್ತಾರೆ.\n• ಎರಡು ಪೂರ್ಣಾಂಕಗಳ ಚಿಹ್ನೆಗಳಿಂದ ಗುಣಲಬ್ಧ/ಭಾಗಲಬ್ಧದ ಚಿಹ್ನೆ ನಿರ್ಧರಿಸುತ್ತಾರೆ.\n• ಲೆಕ್ಕದ ಮಾದರಿಯಲ್ಲಿ ಶೂನ್ಯ, ವಿರುದ್ಧ ಚಿಹ್ನೆ ಮತ್ತು ಸಮಾನ ಚಿಹ್ನೆಯ ಸಂದರ್ಭಗಳನ್ನು ವಿವರಿಸುತ್ತಾರೆ.\n• ಗುಣಾಕಾರವನ್ನು ಪುನರಾವರ್ತಿತ ಸೇರ್ಪಡೆ/ಟೋಕನ್ ಮಾದರಿಗೆ ಜೋಡಿಸುತ್ತಾರೆ.\n• ಭಾಗಾಕಾರದ ಉತ್ತರವನ್ನು ಗುಣಾಕಾರದಿಂದ ಪರಿಶೀಲಿಸಿ, ಶೂನ್ಯದಿಂದ ಭಾಗಿಸುವಿಕೆ ಸಾಧ್ಯವಿಲ್ಲವೆಂದು ಗುರುತಿಸುತ್ತಾರೆ.",
+    "prereq": "ಧನ/ಋಣ ಪೂರ್ಣಾಂಕಗಳು ಮತ್ತು ಸಂಖ್ಯಾರೇಖೆ; ವಿರುದ್ಧ ಪೂರ್ಣಾಂಕಗಳ ಜೋಡಿ; ಪೂರ್ಣಾಂಕಗಳ ಸರಳ ಸೇರ್ಪಡೆ/ವ್ಯವಕಲನ; ಗುಣಾಕಾರದ ಪುನರಾವರ್ತಿತ ಗುಂಪು.",
+    "values": "ಚಿಹ್ನೆಗಳನ್ನು ಗಮನದಿಂದ ಓದುವುದು • ಮಾದರಿಯಿಂದ ನಿಯಮ ರೂಪಿಸುವುದು • ಉತ್ತರ ಪರಿಶೀಲನೆ • ತಪ್ಪನ್ನು ಕಲಿಕೆಯ ಅವಕಾಶವಾಗಿ ನೋಡುವುದು",
+    "focus": "ಪೂರ್ಣಾಂಕಗಳ ಗುಣಾಕಾರ; ಧನ/ಋಣ ಟೋಕನ್ ಮಾದರಿ; ಚಿಹ್ನೆ ನಿಯಮ; ಪೂರ್ಣಾಂಕಗಳ ಭಾಗಾಕಾರ; ಗುಣಾಕಾರ–ಭಾಗಾಕಾರದ ಸಂಬಂಧ; ಶೂನ್ಯ ಮತ್ತು ಶೂನ್ಯದಿಂದ ಭಾಗಿಸುವಿಕೆ.",
+    "project": "ಎರಡು ಬಣ್ಣದ ಟೋಕನ್‌ಗಳಿಂದ ಪೂರ್ಣಾಂಕ ಗುಣಾಕಾರ/ಭಾಗಾಕಾರಕ್ಕೆ ಹೊಂದುವ ಚಿತ್ರ-ಕಾರ್ಡ್‌ಗಳನ್ನು ರಚಿಸಿ. ಪ್ರತಿ ಕಾರ್ಡ್‌ಗೆ ಲೆಕ್ಕ, ಮಾದರಿ ಮತ್ತು ಚಿಹ್ನೆಯ ಕಾರಣವನ್ನು ಸೇರಿಸಿ; ಸಹಪಾಠಿಯ ಕಾರ್ಡ್‌ನಿಂದ ಉತ್ತರ ಪರಿಶೀಲಿಸಿ.",
+    "homework": "ಧನ/ಋಣ ಪೂರ್ಣಾಂಕಗಳ ಗುಣಾಕಾರ ಮತ್ತು ಭಾಗಾಕಾರದ 8 ಉದಾಹರಣೆಗಳನ್ನು ರಚಿಸಿ. ಪ್ರತಿಯೊಂದಕ್ಕೂ ಮೊದಲು ಫಲಿತಾಂಶದ ಚಿಹ್ನೆಯನ್ನು ಊಹಿಸಿ, ನಂತರ ಲೆಕ್ಕಿಸಿ ಮತ್ತು ಸಾಧ್ಯವಾದಲ್ಲಿ ಗುಣಾಕಾರದಿಂದ ಪರಿಶೀಲಿಸಿ.",
+    "support": "ಹಸಿರು ಧನ ಮತ್ತು ಕೆಂಪು ಋಣ ಟೋಕನ್, ಶೂನ್ಯ ಜೋಡಿ ಹಾಗೂ ದೊಡ್ಡ ಸಂಖ್ಯಾರೇಖೆ ಬಳಸಿ. ಮೊದಲು ಚಿಕ್ಕ ಸಂಖ್ಯೆ ಮತ್ತು ಒಂದೇ ಚಿಹ್ನೆಯ ಉದಾಹರಣೆ, ನಂತರ ಮಿಶ್ರ ಚಿಹ್ನೆಗಳ ಉದಾಹರಣೆಗೆ ಸಾಗಿರಿ.",
+    "extension": "ಗುಣಲಬ್ಧಗಳ ಕ್ರಮವನ್ನು ಗಮನಿಸಿ ಚಿಹ್ನೆಯ ನಿಯಮವನ್ನು ವಿದ್ಯಾರ್ಥಿಗಳೇ ರೂಪಿಸುವಂತೆ ಮಾಡಿ. ಭಾಗಲಬ್ಧವನ್ನು ಗುಣಲಬ್ಧದಿಂದ ಪರಿಶೀಲಿಸಿ; ಫಲಿತಾಂಶ ಪೂರ್ಣಾಂಕವಾಗದ ಸಂದರ್ಭದ ಕುರಿತು ಊಹೆ ಮತ್ತು ಉದಾಹರಣೆ ಚರ್ಚಿಸಿ.",
+    "note": "ಚಿಹ್ನೆ ನಿಯಮವನ್ನು ಮೊದಲು ಕಂಠಪಾಠ ಮಾಡಿಸದೆ ಪುನರಾವರ್ತಿತ ಮಾದರಿ/ಟೋಕನ್‌ನಿಂದ ಕಟ್ಟಿಸಿ. ಶೂನ್ಯದಿಂದ ಭಾಗಿಸುವುದನ್ನು ಸ್ಪಷ್ಟವಾಗಿ ನಿಷೇಧಿಸಿ; ಗುಣಾಕಾರ ಮತ್ತು ಭಾಗಾಕಾರದಲ್ಲಿ ಚಿಹ್ನೆಯ ನಿಯಮ ಒಂದೇ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಿ.",
+    "stages": [
+      [
+        "ತಾಪಮಾನದಲ್ಲಿ ಏರಿಕೆ/ಇಳಿಕೆ ಅಥವಾ ಅಂಕಗಳ ಗಳಿಕೆ/ಕಡಿತದ ಪೂರ್ಣಾಂಕ ಸಂದರ್ಭ ನೀಡಿ. ‘ಒಂದೇ ಬದಲಾವಣೆ ಹಲವು ಬಾರಿ ನಡೆದರೆ ಒಟ್ಟು ಬದಲಾವಣೆ ಹೇಗೆ ಕಂಡುಹಿಡಿಯಬಹುದು?’ ಎಂದು ಕೇಳಿ.",
+        "ಆರಂಭದ ಸಂಖ್ಯೆ ಮತ್ತು ಬದಲಾವಣೆಯ ದಿಕ್ಕನ್ನು ಸಂಖ್ಯಾರೇಖೆಯಲ್ಲಿ ಗುರುತಿಸಿ; ತಮ್ಮ ಊಹೆಯ ಚಿಹ್ನೆ ಹೇಳುತ್ತಾರೆ.",
+        "ಸಂಖ್ಯಾರೇಖೆ; ತಾಪಮಾನ/ಅಂಕ ಕಾರ್ಡ್‌ಗಳು; ಫಲಕ",
+        "ಚಿಹ್ನೆ ಮತ್ತು ಬದಲಾವಣೆಯ ದಿಕ್ಕಿನ ಸಂಬಂಧವನ್ನು ಗುರುತಿಸುತ್ತಾರೆಯೇ?",
+        "ಋಣ ಚಿಹ್ನೆಯನ್ನು ಕೇವಲ ‘ಚಿಕ್ಕದು’ ಎಂದು ಓದುವ ಗೊಂದಲವನ್ನು ದಾಖಲಿಸಿ."
+      ],
+      [
+        "ಟೋಕನ್ ಚೀಲದ ಮಾದರಿಯನ್ನು ತೋರಿಸಿ: ಧನ/ಋಣ ಟೋಕನ್‌ಗಳನ್ನು ಪುನರಾವರ್ತಿತವಾಗಿ ಸೇರಿಸುವುದು, ನಂತರ ಶೂನ್ಯ ಜೋಡಿ ಸೇರಿಸಿ ಟೋಕನ್ ತೆಗೆಯುವುದು—ಇವುಗಳಿಂದ ಗುಣಾಕಾರದ ಸಂದರ್ಭಗಳನ್ನು ಅನ್ವೇಷಿಸಿ.",
+        "ಗುಂಪಾಗಿ (+)×(−), (−)×(+) ಮತ್ತು (−)×(−) ಮಾದರಿ ಮಾಡಿ; ಉಳಿದ ಟೋಕನ್‌ಗಳಿಂದ ಫಲಿತಾಂಶ ಊಹಿಸುತ್ತಾರೆ.",
+        "ಎರಡು ಬಣ್ಣದ ಚಿಪ್‌ಗಳು; ಶೂನ್ಯ-ಜೋಡಿ ಕಾರ್ಡ್; ಕಾರ್ಯಪತ್ರ",
+        "ಟೋಕನ್ ಮಾದರಿ ಮತ್ತು ಸಂಖ್ಯೆಯ ಚಿಹ್ನೆಯನ್ನು ಸರಿಯಾಗಿ ಜೋಡಿಸುತ್ತಾರೆಯೇ?",
+        "ಮಾದರಿಯಲ್ಲಿನ ‘ತೆಗೆದುಹಾಕುವುದು’ ಅರ್ಥವಾಗದವರಿಗೆ ಶೂನ್ಯ ಜೋಡಿಯನ್ನು ಮತ್ತೆ ತೋರಿಸಿ."
+      ],
+      [
+        "ಮಾದರಿಗಳಿಂದ ಗುಣಾಕಾರದ ಚಿಹ್ನೆ ನಿಯಮವನ್ನು ಪಟ್ಟಿ ಮಾಡಿ. ಭಾಗಾಕಾರವನ್ನು ಗುಣಾಕಾರದ ವಿರುದ್ಧ ಕ್ರಿಯೆಯಾಗಿ ಜೋಡಿಸಿ; ಒಂದೇ/ಬೇರೆ ಚಿಹ್ನೆಯ ನಿಯಮಗಳನ್ನು ಉದಾಹರಣೆಗಳಿಂದ ಸಂಕ್ಷೇಪಿಸಿ.",
+        "ನಿಯಮವನ್ನು ತಮ್ಮ ಪದಗಳಲ್ಲಿ ಬರೆಯುತ್ತಾರೆ; ಗುಣಾಕಾರದಿಂದ ಭಾಗಾಕಾರ ಪರಿಶೀಲಿಸಿ, ಶೂನ್ಯದಿಂದ ಭಾಗಿಸುವ ಉದಾಹರಣೆಯ ಬಗ್ಗೆ ಚರ್ಚಿಸುತ್ತಾರೆ.",
+        "ಚಿಹ್ನೆ ಪಟ್ಟಿಕೆ; ಫಲಕ; ಪೂರ್ಣಾಂಕ ಕಾರ್ಡ್‌ಗಳು",
+        "ನಿಯಮ ಹೇಳುವಷ್ಟೇ ಅಲ್ಲದೆ ಒಂದು ಮಾದರಿ ಅಥವಾ ಪರಸ್ಪರ ಕ್ರಿಯೆಯಿಂದ ಸಮರ್ಥಿಸುತ್ತಾರೆಯೇ?",
+        "ಅಂಕಗಣಿತದ ತಪ್ಪು ಮತ್ತು ಚಿಹ್ನೆಯ ತಪ್ಪನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಗುರುತಿಸಿ."
+      ],
+      [
+        "ಲೆಕ್ಕದ ಕಾರ್ಡ್ ಆಟ ನೀಡಿ: ಪ್ರತಿಯೊಂದು ಉತ್ತರದ ಚಿಹ್ನೆ ಮೊದಲು ಊಹಿಸಿ, ನಂತರ ಲೆಕ್ಕಿಸಿ, ಇನ್ನೊಂದು ಕಾರ್ಡ್‌ನ ವಿರುದ್ಧ ಕ್ರಿಯೆಯಿಂದ ಪರಿಶೀಲಿಸಬೇಕು.",
+        "ಜೋಡಿಯಲ್ಲಿ ಕಾರ್ಡ್ ಪರಿಹರಿಸಿ; ಉತ್ತರದ ಚಿಹ್ನೆ/ಮೌಲ್ಯವನ್ನು ಕಾರಣದೊಂದಿಗೆ ವಿವರಿಸಿ; ಸಹಪಾಠಿಯ ಲೆಕ್ಕ ಪರಿಶೀಲಿಸುತ್ತಾರೆ.",
+        "ಕಾರ್ಡ್ ಆಟ; ಟೋಕನ್; ಸಂಖ್ಯಾರೇಖೆ; ಸ್ವಪರಿಶೀಲನಾ ಹಾಳೆ",
+        "ಅಂದಾಜು, ಲೆಕ್ಕ ಮತ್ತು ಪರಿಶೀಲನೆ ಪರಸ್ಪರ ಹೊಂದಿಕೆಯಾಗುತ್ತವೆಯೇ?",
+        "ವೇಗಕ್ಕಿಂತ ಕಾರಣ ಮತ್ತು ಪರಿಶೀಲನೆಗೆ ಆದ್ಯತೆ ನೀಡಿ."
+      ],
+      [
+        "ಚಿಹ್ನೆ ನಿರ್ಧಾರ, ಒಂದು ಗುಣಾಕಾರ, ಒಂದು ಭಾಗಾಕಾರ ಮತ್ತು ಶೂನ್ಯದಿಂದ ಭಾಗಿಸುವಿಕೆಯ ಕುರಿತು ನಾಲ್ಕು ಚಿಕ್ಕ ಪ್ರಶ್ನೆ ನೀಡಿ.",
+        "ಉತ್ತರದ ಜೊತೆಗೆ ಚಿಹ್ನೆಯ ಕಾರಣ ಬರೆಯುತ್ತಾರೆ; ಒಂದು ಭಾಗಾಕಾರವನ್ನು ಗುಣಾಕಾರದಿಂದ ಪರಿಶೀಲಿಸುತ್ತಾರೆ.",
+        "ನಿರ್ಗಮನ ಚೀಟಿ; ಚಿಹ್ನೆ ಪಟ್ಟಿ",
+        "ಚಿಹ್ನೆ ನಿಯಮ, ಗಣನೆ ಮತ್ತು ಶೂನ್ಯ ನಿಯಮವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಪರಿಶೀಲಿಸಿ.",
+        "ಯಾವ ಚಿಹ್ನೆ ಜೋಡಿಗೆ ಮತ್ತಷ್ಟು ದೃಶ್ಯ ಮಾದರಿ ಬೇಕು ಎಂದು ಮುಂದಿನ ಪಾಠಕ್ಕೆ ದಾಖಲಿಸಿ."
+      ]
+    ]
+  },
+  {
+    "id": "grade7-kn-maths-p2-ch11-common-ground",
+    "number": "ಅಧ್ಯಾಯ 11",
+    "title": "ಸಾಮಾನ್ಯ ಅಂಶವನ್ನು ಕಂಡುಹಿಡಿಯುವುದು",
+    "genre": "ಸಂಖ್ಯಾಜ್ಞಾನ • ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನ, ಗರಿಷ್ಠ ಸಾಮಾನ್ಯ ಅಪವರ್ತನ ಮತ್ತು ಕನಿಷ್ಠ ಸಾಮಾನ್ಯ ಗುಣಿತ",
+    "author": "ಭಾಗ 2ರ ವಿಷಯಾಧಾರ: ಅಧಿಕೃತ ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಗಣಿತ ಪ್ರಕಾಶ (ಆಂಗ್ಲ); ಕನ್ನಡ ಆವೃತ್ತಿ ಪರಿಶೀಲಿಸಿ",
+    "pages": "ಕನ್ನಡ ಪಿಡಿಎಫ್ ಪರಿಶೀಲಿಸಿ ಭರ್ತಿ ಮಾಡಿ",
+    "periods": "ಸ್ಥಳೀಯ ವಾರ್ಷಿಕ ಯೋಜನೆಯಂತೆ ಭರ್ತಿ ಮಾಡಿ",
+    "theme": "ಸಂಖ್ಯೆಗಳ ಅಪವರ್ತನಗಳು ಮತ್ತು ಗುಣಿತಗಳನ್ನು ಹೋಲಿಸಿ ಸಾಮಾನ್ಯ ಅಪವರ್ತನ/ಸಾಮಾನ್ಯ ಗುಣಿತಗಳನ್ನು ಕಂಡುಹಿಡಿಯುತ್ತಾರೆ. ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನ ವಿಭಜನೆಯಿಂದ ಗರಿಷ್ಠ ಸಾಮಾನ್ಯ ಅಪವರ್ತನ (HCF) ಮತ್ತು ಕನಿಷ್ಠ ಸಾಮಾನ್ಯ ಗುಣಿತ (LCM) ಕಂಡುಹಿಡಿದು, ಒಂದೇ ಗಾತ್ರದ ಗುಂಪು ಮಾಡಬೇಕಾದಾಗ ಅಥವಾ ಘಟನೆಗಳು ಮತ್ತೆ ಒಟ್ಟಿಗೆ ಸಂಭವಿಸುವಾಗ ಯಾವುದು ಬೇಕೆಂದು ಸಂದರ್ಭದಿಂದ ಆಯ್ಕೆಮಾಡುತ್ತಾರೆ.",
+    "outcomes": "• ಅವಿಭಾಜ್ಯ ಮತ್ತು ಸಂಯುಕ್ತ ಸಂಖ್ಯೆಗಳನ್ನು ಗುರುತಿಸಿ, ಸಂಖ್ಯೆಯನ್ನು ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನಗಳ ಗುಣಲಬ್ಧವಾಗಿ ಬರೆಯುತ್ತಾರೆ.\n• ಎರಡು ಅಥವಾ ಹೆಚ್ಚಿನ ಸಂಖ್ಯೆಗಳ ಸಾಮಾನ್ಯ ಅಪವರ್ತನ/ಸಾಮಾನ್ಯ ಗುಣಿತಗಳನ್ನು ಗುರುತಿಸುತ್ತಾರೆ.\n• ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನ ವಿಭಜನೆಯಿಂದ HCF ಮತ್ತು LCM ಕಂಡುಹಿಡಿಯುತ್ತಾರೆ.\n• ಗುಂಪು/ಸಮಾನ ಹಂಚಿಕೆ ಮತ್ತು ಮರುಕಳಿಸುವ ಘಟನೆಗಳ ಸಂದರ್ಭಕ್ಕೆ HCF ಅಥವಾ LCM ಆಯ್ಕೆಮಾಡುತ್ತಾರೆ.\n• ತಮ್ಮ ಕ್ರಮವನ್ನು ಅಪವರ್ತನ ಪಟ್ಟಿಕೆ, ಗುಣಿತಗಳ ಪಟ್ಟಿ ಅಥವಾ ಕಾರಣದಿಂದ ಪರಿಶೀಲಿಸುತ್ತಾರೆ.",
+    "prereq": "ಗುಣಾಕಾರ ಕೋಷ್ಟಕ; ಭಾಗಾಕಾರ ಮತ್ತು ಭಾಗಶೇಷ; ಅಪವರ್ತನ/ಗುಣಿತದ ಪ್ರಾಥಮಿಕ ಕಲ್ಪನೆ; ಅವಿಭಾಜ್ಯ ಸಂಖ್ಯೆಗಳ ಪರಿಚಯ.",
+    "values": "ಕ್ರಮಬದ್ಧ ಹುಡುಕಾಟ • ಸಾಮಾನ್ಯ ಮಾದರಿ ಗಮನಿಸುವುದು • ವಿಧಾನವನ್ನು ಸಮರ್ಥಿಸುವುದು • ಯುಕ್ತಿಯುಕ್ತ ಅಂದಾಜು",
+    "focus": "ಅಪವರ್ತನಗಳು ಮತ್ತು ಗುಣಿತಗಳು; ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನ ವಿಭಜನೆ; ಸಾಮಾನ್ಯ ಅಪವರ್ತನ; HCF; ಸಾಮಾನ್ಯ ಗುಣಿತ; LCM; HCF/LCMಯ ಪ್ರಾಯೋಗಿಕ ಆಯ್ಕೆ.",
+    "project": "6 ಸೆಂ.ಮೀ. ಮತ್ತು 8 ಸೆಂ.ಮೀ. ಉದ್ದದ ಪಟ್ಟಿಗಳನ್ನು ಕತ್ತರಿಸದೆ ಒಂದೇ ಉದ್ದದ ತೋರಣ ಮಾಡಲು ಬೇಕಾದ ಅತಿ ಚಿಕ್ಕ ಉದ್ದ ಕಂಡುಹಿಡಿಯಿರಿ. ಪಟ್ಟಿಗಳ ಮಾದರಿ, ಗುಣಿತಗಳ ಪಟ್ಟಿ ಮತ್ತು LCM ವಿಧಾನವನ್ನು ಹೋಲಿಸಿ ಚಿತ್ರಸಹಿತ ವರದಿ ಮಾಡಿ.",
+    "homework": "ಒಂದು ಹಂಚಿಕೆ ಸಮಸ್ಯೆ ಮತ್ತು ಒಂದು ಮರುಕಳಿಸುವ ಕಾರ್ಯಕ್ರಮದ ಸಮಸ್ಯೆ ಬರೆಯಿರಿ. ಪ್ರತಿಯೊಂದರಲ್ಲಿ HCF ಅಥವಾ LCM ಯಾಕೆ ಬೇಕು ಎಂದು ಮೊದಲು ವಿವರಿಸಿ; ನಂತರ ಲೆಕ್ಕಿಸಿ ಉತ್ತರ ಪರಿಶೀಲಿಸಿ.",
+    "support": "ಸಂಖ್ಯಾ-ಅಪವರ್ತನ ಕಾರ್ಡ್, 1ರಿಂದ 100ರವರೆಗಿನ ಜಾಲ, ಗುಣಿತಗಳ ಸಂಖ್ಯಾರೇಖೆ ಮತ್ತು ಸರಳ ಅಪವರ್ತನ ಮರದ ಹಂತಗಳನ್ನು ಬಳಸಿ. HCF/LCMಗೆ ಸಾಮಾನ್ಯ ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನಗಳನ್ನು ಬಣ್ಣದಿಂದ ತೋರಿಸಿ.",
+    "extension": "ಮೂರು ಸಂಖ್ಯೆಗಳ HCF ಮತ್ತು LCM ಅನ್ನು ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನಗಳ ಘಾತಗಳ ಮೂಲಕ ಹೋಲಿಸಿ. ಒಂದು ಸಂಖ್ಯೆ ಮತ್ತೊಂದರ ಅಪವರ್ತನವಾಗಿರುವಾಗ ಉತ್ತರದಲ್ಲಿ ಏನು ಮಾದರಿ ಕಾಣುತ್ತದೆ ಎಂದು ಊಹಿಸಿ ಮತ್ತು ಪರೀಕ್ಷಿಸಿ.",
+    "note": "HCF ಎಂದರೆ ಸಾಮಾನ್ಯ ಅಪವರ್ತನಗಳಲ್ಲಿ ಅತಿ ದೊಡ್ಡದು; LCM ಎಂದರೆ ಸಾಮಾನ್ಯ ಗುಣಿತಗಳಲ್ಲಿ ಅತಿ ಚಿಕ್ಕದು. ಪದಪ್ರಶ್ನೆಯಲ್ಲಿ ‘ಸಮಾನವಾಗಿ ಹಂಚು/ಅತಿ ದೊಡ್ಡ ಗುಂಪು’ ಮತ್ತು ‘ಮತ್ತೆ ಒಂದೇ ಸಮಯಕ್ಕೆ/ಅತಿ ಚಿಕ್ಕ ಸಾಮಾನ್ಯ’ ಎಂಬ ಸೂಚನೆಗಳನ್ನು ಚರ್ಚಿಸಿ; ಸ್ಥಳೀಯ ಕನ್ನಡ ಪಠ್ಯದ ಪದಬಳಕೆಯನ್ನು ಪರಿಶೀಲಿಸಿ.",
+    "stages": [
+      [
+        "6 ಸೆಂ.ಮೀ. ಮತ್ತು 8 ಸೆಂ.ಮೀ. ಪಟ್ಟಿಗಳಿಂದ ಒಂದೇ ಉದ್ದದ ತೋರಣ ಮಾಡಲು ಯಾವ ಉದ್ದಗಳು ಸಾಧ್ಯ ಎಂದು ಕೇಳಿ. ಜೊತೆಗೆ ಸಮಪ್ರಮಾಣದ ವಸ್ತುಗಳನ್ನು ದೊಡ್ಡದಾದ ಸಮಾನ ಗುಂಪುಗಳಾಗಿ ವಿಂಗಡಿಸುವ ಚಿತ್ರ ನೀಡಿ.",
+        "ಸಾಧ್ಯ ಉದ್ದಗಳನ್ನು/ಗುಂಪುಗಳ ಸಂಖ್ಯೆಯನ್ನು ಊಹಿಸಿ; ಪಟ್ಟಿಯ ಪುನರಾವರ್ತನೆ ಮತ್ತು ಸಾಮಾನ್ಯ ಸಂಖ್ಯೆಯ ಅರ್ಥ ಹೇಳುತ್ತಾರೆ.",
+        "6/8 ಸೆಂ.ಮೀ. ಕಾಗದದ ಪಟ್ಟಿಗಳು; ಗುಂಪು ವಸ್ತುಗಳ ಚಿತ್ರ; ಫಲಕ",
+        "ಸಂದರ್ಭವು ಸಾಮಾನ್ಯ ಗುಣಿತವೋ ಅಥವಾ ಸಾಮಾನ್ಯ ಅಪವರ್ತನವೋ ಸೂಚಿಸುತ್ತದೆಯೇ ಎಂದು ಊಹಿಸುತ್ತಾರೆಯೇ?",
+        "HCF ಮತ್ತು LCM ಸಮಸ್ಯೆಗಳನ್ನು ಯಾವ ಪದಗಳು ಬೇರ್ಪಡಿಸುತ್ತವೆ ಎಂದು ಗಮನಿಸಿ."
+      ],
+      [
+        "ಸಂಖ್ಯಾ ಕಾರ್ಡ್‌ಗಳಿಂದ ಅಪವರ್ತನಗಳನ್ನು ಜೋಡಿಸಿ; ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನ ವಿಭಜನೆಗೆ ಅಪವರ್ತನ ಮರ ಮಾಡಿ. ಎರಡು ಸಂಖ್ಯೆಗಳ ಸಾಮಾನ್ಯ ಅಪವರ್ತನ ಮತ್ತು ಸಾಮಾನ್ಯ ಗುಣಿತವನ್ನು ಪಟ್ಟಿ/ಜಾಲದಲ್ಲಿ ಗುರುತಿಸಿ.",
+        "ಜೋಡಿಯಲ್ಲಿ ಅಪವರ್ತನಗಳ ಪಟ್ಟಿಯನ್ನು ರಚಿಸಿ; ಅವಿಭಾಜ್ಯ ವಿಭಜನೆ ಬರೆದು ಸಾಮಾನ್ಯ ಭಾಗ/ಮೊದಲ ಸಾಮಾನ್ಯ ಗುಣಿತ ಗುರುತಿಸುತ್ತಾರೆ.",
+        "ಅಪವರ್ತನ ಕಾರ್ಡ್‌ಗಳು; 1–100 ಜಾಲ; ಗುಣಿತ ಸಂಖ್ಯಾರೇಖೆ; ಕಾಗದದ ಮರ-ಚಿತ್ರ",
+        "ಪ್ರತಿ ಸಂಖ್ಯೆಯ ಗುಣಲಬ್ಧಕ್ಕೆ ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನ ವಿಭಜನೆ ಸರಿಯಾಗಿದೆಯೇ? ಸಾಮಾನ್ಯ ಅಂಶ ಸರಿಯಾಗಿ ಗುರುತಿದೆಯೇ?",
+        "ಪಟ್ಟಿಯಲ್ಲಿ ತಪ್ಪಿದ ಅಪವರ್ತನವೇ, ಅಥವಾ ಪ್ರಧಾನ ವಿಭಜನೆಯ ತಪ್ಪೇ ಎಂದು ಗುರುತಿಸಿ ನೆರವು ನೀಡಿ."
+      ],
+      [
+        "HCFಗೆ ಸಾಮಾನ್ಯ ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನಗಳ ಕನಿಷ್ಠ ಘಾತಗಳನ್ನು, LCMಗೆ ಬೇಕಾದ ಗರಿಷ್ಠ ಘಾತಗಳನ್ನು ಬಳಸುವ ವಿಧಾನವನ್ನು ಸಣ್ಣ ಸಂಖ್ಯೆಗಳ ಮೂಲಕ ರೂಪಿಸಿ. ಪಟ್ಟಿಮಾಡುವ ಉತ್ತರದೊಂದಿಗೆ ಹೋಲಿಸಿ.",
+        "ಅಪವರ್ತನ ವಿಭಜನೆಯಲ್ಲಿ ಸಾಮಾನ್ಯ ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನಗಳನ್ನು ಬಣ್ಣಿಸಿ HCF; ಅಗತ್ಯವಾದ ಎಲ್ಲಾ ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನಗಳನ್ನು ಸೇರಿಸಿ LCM ಕಂಡುಹಿಡಿದು ವಿಧಾನ ಹೇಳುತ್ತಾರೆ.",
+        "ಬಣ್ಣದ ಪೆನ್ಸಿಲ್; ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನ ಪಟ್ಟಿಕೆ; ಫಲಕ; ಉದಾಹರಣೆ ಹಾಳೆ",
+        "HCF/LCM ಆಯ್ಕೆ ಮತ್ತು ಪ್ರೈಮ್‌ಗಳ ಆಯ್ಕೆಯನ್ನು ಕಾರಣದೊಂದಿಗೆ ವಿವರಿಸುತ್ತಾರೆಯೇ?",
+        "‘ಎಲ್ಲಾ ಪ್ರೈಮ್‌ಗಳನ್ನು ಗುಣಿಸು’ ಎಂಬ ಸಾಮಾನ್ಯ ತಪ್ಪನ್ನು ಉದಾಹರಣೆಯಿಂದ ಚರ್ಚಿಸಿ."
+      ],
+      [
+        "ಸಮಾನ ಹಂಚಿಕೆ (ಉದಾ. 24 ಮತ್ತು 36 ವಸ್ತು) ಹಾಗೂ ಎರಡು ಮರುಕಳಿಸುವ ವೇಳಾಪಟ್ಟಿ (ಉದಾ. 6 ಮತ್ತು 8 ದಿನ) ಇರುವ ಸಂದರ್ಭ ನೀಡಿ. ಯಾವ ವಿಧಾನ ಬೇಕು ಎಂದು ವಿದ್ಯಾರ್ಥಿಗಳಿಂದ ಆಯ್ಕೆಮಾಡಿಸಿ.",
+        "ಗುಂಪು HCF/LCM ಆಯ್ಕೆಮಾಡಿ, ಲೆಕ್ಕಿಸಿ, ಉತ್ತರದ ಘಟಕದೊಂದಿಗೆ ಮಂಡಿಸುತ್ತಾರೆ; ಬೇರೆ ಗುಂಪಿನ ಆಯ್ಕೆಯನ್ನು ಪ್ರಶ್ನಿಸುತ್ತಾರೆ.",
+        "ಸಂದರ್ಭ ಕಾರ್ಡ್‌ಗಳು; ಕೌಂಟರ್‌ಗಳು; ದಿನ-ಪಟ್ಟಿ; ಬರವಣಿಗೆ ಹಾಳೆ",
+        "ಲೆಕ್ಕ ಸರಿಯಾಗಿದೆಯೇ ಮತ್ತು ಆಯ್ಕೆ ಮಾಡಿದ HCF/LCM ಸಂದರ್ಭಕ್ಕೆ ಹೊಂದಿಕೆಯಾಗಿದೆಯೇ?",
+        "ಸಂಕೇತದ ಬಳಕೆಗೆ ಮುಂಚೆ ಸಂದರ್ಭವನ್ನು ತಮ್ಮ ಪದಗಳಲ್ಲಿ ಹೇಳಲು ಪ್ರೇರೇಪಿಸಿ."
+      ],
+      [
+        "ಒಂದು ಚಿಕ್ಕ ಅವಿಭಾಜ್ಯ ವಿಭಜನೆ, ಒಂದು HCF, ಒಂದು LCM ಮತ್ತು ಸಂದರ್ಭದಿಂದ ಸರಿಯಾದ ವಿಧಾನ ಆಯ್ಕೆಮಾಡುವ ನಿರ್ಗಮನ ಕಾರ್ಯ ನೀಡಿ.",
+        "ಪ್ರತಿ ಉತ್ತರದ ಬಳಿ ಬಳಸಿದ ವಿಧಾನ ಬರೆಯುತ್ತಾರೆ; ಒಂದು ಫಲಿತಾಂಶವನ್ನು ಪರ್ಯಾಯ ಪಟ್ಟಿಯಿಂದ ಪರಿಶೀಲಿಸುತ್ತಾರೆ.",
+        "ನಿರ್ಗಮನ ಚೀಟಿ; ಸ್ವಪರಿಶೀಲನಾ ಪಟ್ಟಿಕೆ",
+        "ಗುಣಿತ/ಅಪವರ್ತನ, ವಿಧಾನ ಮತ್ತು ಸಂದರ್ಭದ ಅರ್ಥವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಪರಿಶೀಲಿಸಿ.",
+        "ಮುಂದಿನ ಘಟಕದಲ್ಲಿ ಗುಣಿತಪಟ್ಟಿ, ಅವಿಭಾಜ್ಯ ಅಪವರ್ತನ ವಿಭಜನೆ ಅಥವಾ ಪದಪ್ರಶ್ನೆ—ಯಾವುದಕ್ಕೆ ಮರುಅಭ್ಯಾಸ ಬೇಕು ಎಂದು ಗುರುತಿಸಿ."
+      ]
+    ]
+  },
+  {
+    "id": "grade7-kn-maths-p2-ch12-decimals",
+    "number": "ಅಧ್ಯಾಯ 12",
+    "title": "ಬಿಂದುವಿನ ಆಚೆಗೆ ಮತ್ತೊಂದು ಇಣುಕು ನೋಟ",
+    "genre": "ಸಂಖ್ಯಾಜ್ಞಾನ • ದಶಮಾಂಶ ಸಂಖ್ಯೆಗಳ ಗುಣಾಕಾರ ಮತ್ತು ಭಾಗಾಕಾರ",
+    "author": "ಭಾಗ 2ರ ವಿಷಯಾಧಾರ: ಅಧಿಕೃತ ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಗಣಿತ ಪ್ರಕಾಶ (ಆಂಗ್ಲ); ಕನ್ನಡ ಆವೃತ್ತಿ ಪರಿಶೀಲಿಸಿ",
+    "pages": "ಕನ್ನಡ ಪಿಡಿಎಫ್ ಪರಿಶೀಲಿಸಿ ಭರ್ತಿ ಮಾಡಿ",
+    "periods": "ಸ್ಥಳೀಯ ವಾರ್ಷಿಕ ಯೋಜನೆಯಂತೆ ಭರ್ತಿ ಮಾಡಿ",
+    "theme": "ಸ್ಥಾನಮೌಲ್ಯ ಮತ್ತು ದಶಾಂಶ ಭಿನ್ನರಾಶಿಗಳಿಂದ ದಶಮಾಂಶ ಸಂಖ್ಯೆಗಳ ಗುಣಾಕಾರ/ಭಾಗಾಕಾರಕ್ಕೆ ಸಾಗುತ್ತಾರೆ. ಮೊದಲು 10, 100, 1000ರಿಂದ ಭಾಗಿಸುವುದು, ನಂತರ ದಶಮಾಂಶ ಗುಣಾಕಾರ, ಪೂರ್ಣಾಂಕ ಅಥವಾ ದಶಮಾಂಶ ಭಾಗಲಬ್ಧ, ದಶಮಾಂಶ ಭಾಜಕದೊಂದಿಗೆ ಭಾಗಾಕಾರ ಮತ್ತು ಉತ್ತರದ ಅಂದಾಜು/ಪರಿಶೀಲನೆಯನ್ನು ದೈನಂದಿನ ಅಳತೆ-ಬೆಲೆ ಸಂದರ್ಭಗಳಿಗೆ ಜೋಡಿಸುತ್ತಾರೆ.",
+    "outcomes": "• ದಶಮಾಂಶವನ್ನು ಹತ್ತಾಂಶ/ನೂರಾಂಶ/ಸಾವಿರಾಂಶಗಳ ಮೊತ್ತವಾಗಿ ಪ್ರತಿನಿಧಿಸುತ್ತಾರೆ.\n• ದಶಮಾಂಶ × ಪೂರ್ಣಾಂಕ ಮತ್ತು ದಶಮಾಂಶ × ದಶಮಾಂಶ ಲೆಕ್ಕಿಸಿ ಸ್ಥಾನಮೌಲ್ಯದಿಂದ ದಶಾಂಶ ಬಿಂದುವಿನ ಸ್ಥಾನವನ್ನು ಸಮರ್ಥಿಸುತ್ತಾರೆ.\n• 10, 100, 1000ರಿಂದ ಭಾಗಿಸುವುದು ಹಾಗೂ ಭಾಗಲಬ್ಧದಲ್ಲಿ ದಶಮಾಂಶ ಸ್ಥಾನವನ್ನು ಗುರುತಿಸುತ್ತಾರೆ.\n• ದಶಮಾಂಶ ಭಾಜಕವನ್ನು ಸಮಮೌಲ್ಯದ ಪೂರ್ಣಾಂಕ ಭಾಜಕವಾಗಿಸಿ ಭಾಗಾಕಾರ ಪರಿಹರಿಸುತ್ತಾರೆ.\n• ಹಣ/ಉದ್ದ/ತೂಕದ ಸಮಸ್ಯೆಗಳಲ್ಲಿ ಅಂದಾಜು ಮಾಡಿ ಉತ್ತರದ ಗಾತ್ರ ಪರಿಶೀಲಿಸುತ್ತಾರೆ.",
+    "prereq": "ದಶಮಾಂಶ ಸ್ಥಾನಮೌಲ್ಯ; ದಶಮಾಂಶವನ್ನು ಭಿನ್ನರಾಶಿಯಾಗಿ ಓದುವುದು; ಪೂರ್ಣಾಂಕ ಗುಣಾಕಾರ/ಭಾಗಾಕಾರ; ಉದ್ದ ಮತ್ತು ತೂಕದ ಘಟಕಗಳು.",
+    "values": "ಘಟಕದ ಸರಿಯಾದ ಬಳಕೆ • ಅಂದಾಜಿನಿಂದ ಪರಿಶೀಲನೆ • ಲೆಕ್ಕದ ಕ್ರಮವನ್ನು ವಿವರಿಸುವುದು • ದೈನಂದಿನ ಮಾಹಿತಿಯನ್ನು ಗಣಿತಕ್ಕೆ ರೂಪಿಸುವುದು",
+    "focus": "ದಶಮಾಂಶ ಸ್ಥಾನಮೌಲ್ಯ; ದಶಮಾಂಶ × ಪೂರ್ಣಾಂಕ/ದಶಮಾಂಶ; ಗುಣಲಬ್ಧದ ಅಂದಾಜು; 10ರ ಘಾತಗಳಿಂದ ಭಾಗಾಕಾರ; ದಶಮಾಂಶ ಭಾಗಲಬ್ಧ; ದಶಮಾಂಶ ಭಾಜಕವನ್ನು ಪೂರ್ಣಾಂಕಗೊಳಿಸುವುದು; ಅನ್ವಯ ಸಮಸ್ಯೆಗಳು.",
+    "project": "ಕಲ್ಪಿತ ಮಾರುಕಟ್ಟೆ ರಸೀದಿ ರಚಿಸಿ: ಮೂರು ವಸ್ತುಗಳ ದಶಮಾಂಶ ಬೆಲೆ/ಪ್ರಮಾಣದಿಂದ ಒಟ್ಟು ಬೆಲೆ ಲೆಕ್ಕಿಸಿ, ಒಂದನ್ನು ಸಮವಾಗಿ ಹಂಚಿದಾಗ ಪ್ರತಿ ಭಾಗ ಎಷ್ಟು ಬರುತ್ತದೆ ಎಂದು ಕಂಡುಹಿಡಿಯಿರಿ. ಅಂದಾಜು ಮತ್ತು ನಿಖರ ಉತ್ತರ ಎರಡನ್ನೂ ತೋರಿಸಿ.",
+    "homework": "ಅಳತೆಗೆ ಅನುಮತಿಯಿರುವ ಮೂರು ವಸ್ತುಗಳ ದಶಮಾಂಶ ಉದ್ದ/ತೂಕವನ್ನು ದಾಖಲಿಸಿ. ಒಂದು ಗುಣಾಕಾರ ಮತ್ತು ಒಂದು ಭಾಗಾಕಾರದ ಪ್ರಶ್ನೆ ರಚಿಸಿ; ಮೊದಲು ಅಂದಾಜಿಸಿ ನಂತರ ಲೆಕ್ಕಿಸಿ.",
+    "support": "ಸ್ಥಾನಮೌಲ್ಯ ಚಾರ್ಟ್, ದಶಮಾಂಶ ಜಾಲ, ರೂಪಾಯಿ-ಪೈಸೆ ಚೀಟಿ ಮತ್ತು ದಶಮಾಂಶ ಬಿಂದು ಇರುವ ಸ್ಥಳಮೌಲ್ಯ ಪಟ್ಟಿಯನ್ನು ಬಳಸಿ. ಬಿಂದುವಿನ ಸ್ಥಾನ ಊಹಿಸಲು ಮೊದಲು ಪೂರ್ಣಾಂಕ ಗುಣಾಕಾರದ ಫಲಿತಾಂಶದ ಅಂಕಿಗಳನ್ನು ಮಾತ್ರ ಬರೆಯಿರಿ.",
+    "extension": "ಒಂದು ದಶಮಾಂಶ ಸಂಖ್ಯೆಯನ್ನು 10/100ರಿಂದ ಗುಣಿಸಿದಾಗ/ಭಾಗಿಸಿದಾಗ ಅಂಕಿಗಳ ಸ್ಥಾನ ಹೇಗೆ ಬದಲಾಗುತ್ತದೆ ಎಂದು ವಿವರಿಸಿ. ಎರಡು ದಶಮಾಂಶಗಳ ಗುಣಲಬ್ಧ ಎರಡೂ ಸಂಖ್ಯೆಗಳಿಗಿಂತ ಕಡಿಮೆ ಆಗುವ ಉದಾಹರಣೆ ರೂಪಿಸಿ ಕಾರಣ ನೀಡಿ.",
+    "note": "ದಶಮಾಂಶ ಬಿಂದುವನ್ನು ‘ಸರಿಸಿ’ ಎಂಬ ನಿಯಮವನ್ನು ಮಾತ್ರ ಕಂಠಪಾಠ ಮಾಡಿಸದೆ ಭಿನ್ನರಾಶಿ/ಸ್ಥಾನಮೌಲ್ಯದಿಂದ ವಿವರಿಸಿ. ದಶಮಾಂಶದ ನಂತರದ ಅನಾವಶ್ಯಕ ಶೂನ್ಯಗಳು ಮೌಲ್ಯ ಬದಲಿಸುವುದಿಲ್ಲ; ಉತ್ತರಕ್ಕೆ ಸೂಕ್ತ ಘಟಕ ಬರೆಯಲು ಹೇಳಿ.",
+    "stages": [
+      [
+        "₹9.50 ಬೆಲೆಯ ಪೆನ್ನನ್ನು ಹಲವು ಬಾರಿ ಖರೀದಿಸುವುದು ಅಥವಾ 3.9 ಮೀ. ರಿಬ್ಬನ್ ಅನ್ನು ಸಮಭಾಗ ಮಾಡುವುದು ಎಂಬ ಸಂದರ್ಭ ನೀಡಿ. ಯಾವ ಕ್ರಿಯೆ ಬೇಕು, ಉತ್ತರ ಸುಮಾರು ಎಷ್ಟು ಎಂದು ಕೇಳಿ.",
+        "ಸಂದರ್ಭದಿಂದ ಗುಣಾಕಾರ/ಭಾಗಾಕಾರ ಆಯ್ಕೆ ಮಾಡಿ; ಹಣ/ಉದ್ದದ ಅಂದಾಜು ನೀಡುತ್ತಾರೆ.",
+        "ಕಲ್ಪಿತ ಬೆಲೆಪಟ್ಟಿ; ನಾಣ್ಯ/ರೂಪಾಯಿ ಕಾರ್ಡ್; ಮಾಪಕ; ಫಲಕ",
+        "ಕ್ರಿಯೆ ಆಯ್ಕೆ ಮತ್ತು ಅಂದಾಜು ಉತ್ತರದ ಗಾತ್ರ ಸಂದರ್ಭಕ್ಕೆ ಸರಿಹೊಂದುತ್ತದೆಯೇ?",
+        "ಲೆಕ್ಕದ ಮೊದಲು ಅಂದಾಜು ಮಾಡುವ ಅಭ್ಯಾಸ ಇದೆಯೇ ಎಂದು ಗಮನಿಸಿ."
+      ],
+      [
+        "ದಶಮಾಂಶ ಜಾಲ ಅಥವಾ ಸ್ಥಾನಮೌಲ್ಯ ಪಟ್ಟಿಯಲ್ಲಿ 2.35 ಅನ್ನು ಭಾಗಿಸಿ, 10/100ರಿಂದ ಭಾಗಿಸಿ, ಪುನರಾವರ್ತಿತ ಗುಣಾಕಾರ ಮತ್ತು ಸಮಹಂಚಿಕೆಯ ಮಾದರಿಗಳನ್ನು ಗುಂಪುಗಳಿಗೆ ನೀಡಿ.",
+        "ಅಂಕಿಗಳನ್ನು ಹತ್ತಾಂಶ/ನೂರಾಂಶವಾಗಿ ಪ್ರತಿನಿಧಿಸಿ; ದಶಮಾಂಶ × ಪೂರ್ಣಾಂಕ ಮತ್ತು ದಶಮಾಂಶ ಭಾಗಾಕಾರವನ್ನು ಮಾದರಿಯಿಂದ ಪರೀಕ್ಷಿಸುತ್ತಾರೆ.",
+        "ಸ್ಥಾನಮೌಲ್ಯ ಚಾರ್ಟ್; ದಶಮಾಂಶ ಜಾಲ; ಅಳತೆಪಟ್ಟಿ; ಕಾರ್ಯಪತ್ರ",
+        "ಅಂಕಿಗಳ ಸ್ಥಾನ ಮತ್ತು ಘಟಕ ಭಾಗವನ್ನು ಸರಿಯಾಗಿ ಜೋಡಿಸುತ್ತಾರೆಯೇ?",
+        "ಬಿಂದು ತಪ್ಪು ಸ್ಥಳಕ್ಕೆ ಹಾಕುವವರಿಗೆ ರೂಪಾಯಿ/ಪೈಸೆ ಅಥವಾ ಜಾಲ ಮಾದರಿ ಕೊಡಿ."
+      ],
+      [
+        "ಗುಣಾಕಾರವನ್ನು ದಶಮಾಂಶ ಭಿನ್ನರಾಶಿಗಳ ಗುಣಲಬ್ಧವಾಗಿ ವಿವರಿಸಿ; ಸ್ಥಾನಮೌಲ್ಯದಿಂದ ದಶಮಾಂಶ ಬಿಂದುವಿನ ಸ್ಥಾನ ಕಂಡುಹಿಡಿಯಿರಿ. 10ರ ಘಾತಗಳಿಂದ ಭಾಗಿಸುವುದು, ಪೂರ್ಣಾಂಕ ಭಾಗಲಬ್ಧ ಮತ್ತು ದಶಮಾಂಶ ಭಾಜಕದ ಸಂದರ್ಭದಲ್ಲಿ ಕ್ರಮದ ಮಾದರಿ ತೋರಿಸಿ.",
+        "ಹಂತಗಳನ್ನು ಬರೆದು ದಶಮಾಂಶದ ಸ್ಥಾನ ಸಮರ್ಥಿಸುತ್ತಾರೆ; ದಶಮಾಂಶ ಭಾಜಕವನ್ನು ಪೂರ್ಣಾಂಕಗೊಳಿಸಲು ಭಾಜ್ಯ ಮತ್ತು ಭಾಜಕವನ್ನು ಒಂದೇ ಸಂಖ್ಯೆಯಿಂದ ಗುಣಿಸುತ್ತಾರೆ.",
+        "ಫಲಕ; ಸ್ಥಾನಮೌಲ್ಯ ಪಟ್ಟಿ; ಪೂರ್ವಭರಿತ ಹಂತದ ಕಾರ್ಡ್‌ಗಳು",
+        "ದಶಮಾಂಶ ಬಿಂದುವಿನ ಸ್ಥಾನವನ್ನು ಅರ್ಥದಿಂದ ವಿವರಿಸುತ್ತಾರೆಯೇ, ಕೇವಲ ನಿಯಮ ಹೇಳುತ್ತಾರೆಯೇ?",
+        "ಭಾಜ್ಯ ಮತ್ತು ಭಾಜಕ ಎರಡನ್ನೂ ಒಂದೇ ಸಂಖ್ಯೆಯಿಂದ ಗುಣಿಸಿ ಪರಿವರ್ತಿಸುವುದನ್ನು ವಿದ್ಯಾರ್ಥಿಗಳು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದಾರೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ."
+      ],
+      [
+        "ಕಲ್ಪಿತ ಬಟ್ಟೆ/ಇಂಧನ/ಮಾರುಕಟ್ಟೆ ಸಮಸ್ಯೆ ನೀಡಿ: ಏಕಕ ಬೆಲೆ × ಪ್ರಮಾಣ ಅಥವಾ ಒಟ್ಟು ಉದ್ದ ÷ ಸಮಭಾಗ. ವಿದ್ಯಾರ್ಥಿಗಳು ಅಂದಾಜು, ಕ್ರಮ ಮತ್ತು ಘಟಕ ಸೇರಿಸಿ ಪರಿಹರಿಸಲಿ.",
+        "ಗುಂಪು ಒಂದು ಸಮಸ್ಯೆ ಪರಿಹರಿಸಿ; ದಶಮಾಂಶ ಲೆಕ್ಕವನ್ನು ಬೇರೆ ವಿಧಾನದಿಂದ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಘಟಕದೊಂದಿಗೆ ಮಂಡಿಸುತ್ತಾರೆ.",
+        "ಸಂದರ್ಭ ಕಾರ್ಡ್; ಖಾಲಿ ರಸೀದಿ; ಅಳತೆಪಟ್ಟಿ; ಗಣಕಯಂತ್ರ (ಪರಿಶೀಲನೆಗೆ ಮಾತ್ರ)",
+        "ಉತ್ತರ ಅಂದಾಜಿಗೆ ಹತ್ತಿರವಿದೆಯೇ; ಘಟಕ ಮತ್ತು ದಶಮಾಂಶ ಸ್ಥಾನ ಸರಿಯೇ?",
+        "ಗಣಕಯಂತ್ರ ಬಳಸುವ ಮೊದಲು ಕೈಲೆಕ್ಕ ಮತ್ತು ತರ್ಕವನ್ನು ಕೇಳಿ."
+      ],
+      [
+        "ಗುಣಾಕಾರ, 10ರಿಂದ ಭಾಗಾಕಾರ, ದಶಮಾಂಶ ಭಾಜಕದ ಭಾಗಾಕಾರ ಮತ್ತು ಬಿಂದುವಿನ ಸ್ಥಾನದಲ್ಲಿ ಒಂದು ತಪ್ಪು ಇರುವ ಉದಾಹರಣೆ ನೀಡಿ.",
+        "ಲೆಕ್ಕ ಮಾಡಿ, ತಪ್ಪು ಸರಿಪಡಿಸಿ, ಒಂದು ಉತ್ತರವನ್ನು ಅಂದಾಜು ಅಥವಾ ವಿರುದ್ಧ ಕ್ರಿಯೆಯಿಂದ ಪರಿಶೀಲಿಸುತ್ತಾರೆ.",
+        "ನಿರ್ಗಮನ ಚೀಟಿ; ದಶಮಾಂಶ ಜಾಲ; ಸ್ವಪರಿಶೀಲನಾ ಪಟ್ಟಿ",
+        "ಕ್ರಿಯೆ, ದಶಮಾಂಶ ಸ್ಥಾನ, ಅಂದಾಜು ಮತ್ತು ಘಟಕವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ದಾಖಲಿಸಿ.",
+        "ಸ್ಥಾನಮೌಲ್ಯ ಮರುಬೋಧನೆ ಅಥವಾ ಭಾಗಾಕಾರದ ಹಂತ—ಯಾವುದು ಬೇಕು ಎಂದು ಮುಂದಿನ ಪಾಠಕ್ಕೆ ದಾಖಲಿಸಿ."
+      ]
+    ]
+  },
+  {
+    "id": "grade7-kn-maths-p2-ch13-connecting-dots",
+    "number": "ಅಧ್ಯಾಯ 13",
+    "title": "ಚುಕ್ಕೆಗಳನ್ನು ಜೋಡಿಸುವುದು...",
+    "genre": "ದತ್ತಾಂಶ ನಿರ್ವಹಣೆ • ಚುಕ್ಕೆಚಿತ್ರ ಮತ್ತು ಕೇಂದ್ರ ಪ್ರವೃತ್ತಿಯ ಅಳತೆಗಳು",
+    "author": "ಭಾಗ 2ರ ವಿಷಯಾಧಾರ: ಅಧಿಕೃತ ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಗಣಿತ ಪ್ರಕಾಶ (ಆಂಗ್ಲ); ಕನ್ನಡ ಆವೃತ್ತಿ ಪರಿಶೀಲಿಸಿ",
+    "pages": "ಕನ್ನಡ ಪಿಡಿಎಫ್ ಪರಿಶೀಲಿಸಿ ಭರ್ತಿ ಮಾಡಿ",
+    "periods": "ಸ್ಥಳೀಯ ವಾರ್ಷಿಕ ಯೋಜನೆಯಂತೆ ಭರ್ತಿ ಮಾಡಿ",
+    "theme": "ದತ್ತಾಂಶವನ್ನು ಸಂಗ್ರಹಿಸಿ, ಕ್ರಮಗೊಳಿಸಿ ಮತ್ತು ಚುಕ್ಕೆಚಿತ್ರದಲ್ಲಿ ತೋರಿಸಿ ಹಂಚಿಕೆಯ ಮಾದರಿ/ವ್ಯತ್ಯಾಸವನ್ನು ಓದುತ್ತಾರೆ. ಅಂಕಗಣಿತ ಸರಾಸರಿ, ಮಧ್ಯಕ, ಬಹುಲಕ, ಕನಿಷ್ಠ/ಗರಿಷ್ಠ ಮೌಲ್ಯ ಮತ್ತು ಹೊರಮೌಲ್ಯ ಯಾವುದು ದತ್ತಾಂಶಕ್ಕೆ ಸೂಕ್ತ ಪ್ರತಿನಿಧಿ ಎಂಬುದನ್ನು ಸಂದರ್ಭದೊಂದಿಗೆ ಹೋಲಿಸುತ್ತಾರೆ.",
+    "outcomes": "• ಅಂಕಿ-ಅಂಶಗಳ ಉತ್ತರ ಬದಲಾಗುವ ಪ್ರಶ್ನೆ ಮತ್ತು ಸ್ಥಿರ ಉತ್ತರದ ಪ್ರಶ್ನೆಯನ್ನು ಬೇರ್ಪಡಿಸುತ್ತಾರೆ.\n• ಸಣ್ಣ ದತ್ತಸಮೂಹವನ್ನು ಸಂಗ್ರಹಿಸಿ/ಕ್ರಮಗೊಳಿಸಿ ಚುಕ್ಕೆಚಿತ್ರ ರಚಿಸುತ್ತಾರೆ.\n• ಅಂಕಗಣಿತ ಸರಾಸರಿ, ಮಧ್ಯಕ ಮತ್ತು ಬಹುಲಕ ಕಂಡುಹಿಡಿದು ಅವುಗಳ ಅರ್ಥ ಹೇಳುತ್ತಾರೆ.\n• ಹೊರಮೌಲ್ಯವು ಸರಾಸರಿಯ ಮೇಲೆ ಬೀರುವ ಪರಿಣಾಮವನ್ನು ಗುರುತಿಸಿ ಮಧ್ಯಕದೊಂದಿಗೆ ಹೋಲಿಸುತ್ತಾರೆ.\n• ದತ್ತಸಮೂಹವನ್ನು ಹೋಲಿಸಲು ಸೂಕ್ತ ಪ್ರತಿನಿಧಿ ಮೌಲ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ ಕಾರಣ ನೀಡುತ್ತಾರೆ.",
+    "prereq": "ಎಣಿಕೆ ಮತ್ತು ಸೇರ್ಪಡೆ/ಭಾಗಾಕಾರ; ಸಂಖ್ಯೆಗಳ ಕ್ರಮ; ಅಕ್ಷರ/ಅಂಕಿ ಪಟ್ಟಿಕೆ ಓದು; ಸರಳ ದತ್ತಾಂಶವನ್ನು ಗುರುತಿಸುವುದು.",
+    "values": "ದತ್ತಾಂಶವನ್ನು ನಿಷ್ಠೆಯಿಂದ ದಾಖಲಿಸುವುದು • ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಗೆ ಗೌರವ • ತೀರ್ಮಾನಕ್ಕೆ ಮುನ್ನ ಸಾಕ್ಷಿ ನೋಡುವುದು • ಅನಿಶ್ಚಿತತೆಯನ್ನು ಒಪ್ಪಿಕೊಳ್ಳುವುದು",
+    "focus": "ದತ್ತಾಂಶ ಪ್ರಶ್ನೆ; ಸಂಗ್ರಹ/ಕ್ರಮ; ಚುಕ್ಕೆಚಿತ್ರ; ಅಂಕಗಣಿತ ಸರಾಸರಿ; ಮಧ್ಯಕ; ಬಹುಲಕ; ಹೊರಮೌಲ್ಯ; ಕೇಂದ್ರ ಪ್ರವೃತ್ತಿ ಮತ್ತು ಹರಡುವಿಕೆ; ಸೂಕ್ತ ಪ್ರತಿನಿಧಿ ಆಯ್ಕೆ.",
+    "project": "ಶಾಲೆಯ ಸಾರ್ವಜನಿಕ/ಅನಾಮಧೇಯ ದತ್ತಾಂಶವನ್ನು ಆರಿಸಿ (ಉದಾ: ಮಳೆಯ ದಿನಗಳ ಸಂಖ್ಯೆ ಅಥವಾ ಪುಸ್ತಕದ ಪುಟಗಳ ಸಂಖ್ಯೆ) ಸಣ್ಣ ದತ್ತಸಮೂಹವನ್ನು ಸಂಗ್ರಹಿಸಿ. ಚುಕ್ಕೆಚಿತ್ರ ರಚಿಸಿ, ಸರಾಸರಿ/ಮಧ್ಯಕ/ಬಹುಲಕ ಮತ್ತು ಒಂದು ಮುಖ್ಯ ಗಮನಿಕೆಯನ್ನು ಪ್ರದರ್ಶಿಸಿ.",
+    "homework": "ಮನೆಯಲ್ಲಿ ಅಳೆಯಬಹುದಾದ, ವೈಯಕ್ತಿಕವಲ್ಲದ 7–10 ಮೌಲ್ಯಗಳ ದತ್ತಾಂಶ ಆಯ್ಕೆಮಾಡಿ. ಕ್ರಮಗೊಳಿಸಿ ಸರಾಸರಿ, ಮಧ್ಯಕ, ಬಹುಲಕ ಕಂಡುಹಿಡಿದು, ಯಾವುದು ಸಾಮಾನ್ಯ ಮೌಲ್ಯವನ್ನು ಚೆನ್ನಾಗಿ ಪ್ರತಿನಿಧಿಸುತ್ತದೆ ಎಂದು ಒಂದು ವಾಕ್ಯ ಬರೆಯಿರಿ.",
+    "support": "ಸಂಖ್ಯೆ ಕಾರ್ಡ್‌ಗಳನ್ನು ಏರಿಕೆಯಲ್ಲಿ ಜೋಡಿಸಿ; ಮಧ್ಯದ ಸ್ಥಾನವನ್ನು ಬಣ್ಣದಿಂದ ತೋರಿಸಿ; ಸರಾಸರಿಗಾಗಿ ಒಟ್ಟು ಮೊತ್ತ ಮತ್ತು ಮೌಲ್ಯಗಳ ಸಂಖ್ಯೆಯನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಬರೆಯಿರಿ. ಪೂರ್ವರಚಿತ ಚುಕ್ಕೆಚಿತ್ರ ಅಕ್ಷಗಳನ್ನು ನೀಡಿ.",
+    "extension": "ಒಂದು ಅತಿಹೆಚ್ಚು/ಅತಿಕಡಿಮೆ ಹೊರಮೌಲ್ಯ ಸೇರಿಸಿ ಅಥವಾ ತೆಗೆದು ಸರಾಸರಿ/ಮಧ್ಯಕ ಹೇಗೆ ಬದಲಾಗುತ್ತದೆ ಎಂದು ಪರಿಶೀಲಿಸಿ. ಎರಡು ಸಮೂಹಗಳ ಚುಕ್ಕೆಚಿತ್ರ, ಕೇಂದ್ರ ಮೌಲ್ಯ ಮತ್ತು ಹರಡುವಿಕೆಯನ್ನು ಹೋಲಿಸಿ ಎಚ್ಚರಿಕೆಯಿಂದ ತೀರ್ಮಾನಿಸಿ.",
+    "note": "ಮಧ್ಯಕ ಕಂಡುಹಿಡಿಯುವ ಮೊದಲು ದತ್ತಾಂಶವನ್ನು ಕ್ರಮಗೊಳಿಸಬೇಕು; ಸಮಸಂಖ್ಯೆಯ ಮೌಲ್ಯಗಳಿದ್ದರೆ ಮಧ್ಯದ ಎರಡು ಮೌಲ್ಯಗಳ ಸರಾಸರಿ ತೆಗೆದುಕೊಳ್ಳಬೇಕು. ಹೊರಮೌಲ್ಯವನ್ನು ಕಾರಣವಿಲ್ಲದೆ ತೆಗೆದುಹಾಕಬೇಡಿ; ದತ್ತಾಂಶ ಸಂಗ್ರಹಿಸುವಾಗ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಬಳಸಬೇಡಿ.",
+    "stages": [
+      [
+        "‘ಒಂದು ತರಗತಿಯ ದೈನಂದಿನ ಓದು ಸಮಯ ಎಷ್ಟು?’ ಎಂಬ ಬದಲಾಗುವ ಉತ್ತರಗಳ ಪ್ರಶ್ನೆ ಮತ್ತು ‘ಒಂದು ವಾರದಲ್ಲಿ ಎಷ್ಟು ದಿನ?’ ಎಂಬ ನಿಶ್ಚಿತ ಉತ್ತರದ ಪ್ರಶ್ನೆ ನೀಡಿ. ಯಾವುದು ದತ್ತಾಂಶ ಪ್ರಶ್ನೆ ಎಂದು ಕೇಳಿ.",
+        "ಪ್ರಶ್ನೆಗಳ ಉತ್ತರಗಳು ಬದಲಾಗುತ್ತವೆಯೇ ಎಂದು ಚರ್ಚಿಸಿ; ಅಳೆಯಲು/ಎಣಿಸಲು ಸಾಧ್ಯವಾದ ಅನಾಮಧೇಯ ಉದಾಹರಣೆ ಸೂಚಿಸುತ್ತಾರೆ.",
+        "ಪ್ರಶ್ನೆ ಕಾರ್ಡ್‌ಗಳು; ಫಲಕ; ಸರಳ ಎಣಿಕೆ ಪಟ್ಟಿ",
+        "ದತ್ತಸಮೂಹ ಬೇಕಾಗುವ ಪ್ರಶ್ನೆಯನ್ನು ಗುರುತಿಸುತ್ತಾರೆಯೇ?",
+        "ವಿದ್ಯಾರ್ಥಿಗಳ ಖಾಸಗಿ ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸುವುದನ್ನು ತಪ್ಪಿಸಿ, ಗಮನಿಸಿ."
+      ],
+      [
+        "ಸಣ್ಣ ಗುಂಪುಗಳಿಗೆ 8–12 ಮೌಲ್ಯಗಳ ಸಿದ್ಧ ದತ್ತಾಂಶ ನೀಡಿ. ಅದನ್ನು ಕ್ರಮಗೊಳಿಸಿ, ಪ್ರತಿಯೊಂದು ಮೌಲ್ಯಕ್ಕೆ ಚುಕ್ಕೆ ಇಟ್ಟು ಚುಕ್ಕೆಚಿತ್ರ ರಚಿಸಲು ಹೇಳಿ.",
+        "ಮೌಲ್ಯಗಳನ್ನು ಏರಿಕೆಯಲ್ಲಿ ಜೋಡಿಸಿ; ಚುಕ್ಕೆಚಿತ್ರ ರಚಿಸಿ; ಹೆಚ್ಚು/ಕಡಿಮೆ ಮೌಲ್ಯ ಮತ್ತು ಗುಂಪುಗೂಡುವಿಕೆಯನ್ನು ಗುರುತಿಸುತ್ತಾರೆ.",
+        "ಸಂಖ್ಯೆ ಕಾರ್ಡ್‌ಗಳು; ಜಾಲಪತ್ರ; ಚುಕ್ಕೆಚಿತ್ರ ಅಕ್ಷ; ಪೆನ್ಸಿಲ್",
+        "ಪ್ರತಿ ಮೌಲ್ಯ ಸರಿಯಾದ ಸ್ಥಾನದಲ್ಲಿ ಮತ್ತು ಸರಿಯಾದ ಆವರ್ತನದೊಂದಿಗೆ ತೋರಿಸಿದ್ದಾರೆಯೇ?",
+        "ಅಕ್ಷದ ಅಂತರ ಮತ್ತು ಪ್ರತಿ ಚುಕ್ಕೆ ಒಂದು ಮೌಲ್ಯವೇ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಿ."
+      ],
+      [
+        "ಒಟ್ಟು ಮೊತ್ತ ÷ ಮೌಲ್ಯಗಳ ಸಂಖ್ಯೆ ಮೂಲಕ ಸರಾಸರಿ; ಕ್ರಮಗೊಳಿಸಿದ ದತ್ತಾಂಶದ ಮಧ್ಯದಿಂದ ಮಧ್ಯಕ; ಹೆಚ್ಚು ಬಾರಿ ಬರುವ ಮೌಲ್ಯದಿಂದ ಬಹುಲಕ ರೂಪಿಸಿ. ಹೊರಮೌಲ್ಯವಿರುವ ದತ್ತಾಂಶದಿಂದ ಸರಾಸರಿ/ಮಧ್ಯಕ ವ್ಯತ್ಯಾಸ ತೋರಿಸಿ.",
+        "ಪ್ರತಿ ಅಳತೆಯನ್ನು ಲೆಕ್ಕಿಸಿ; ಫಲಿತಾಂಶ ಯಾವ ಅರ್ಥ ನೀಡುತ್ತದೆ ಎಂದು ಉದಾಹರಣೆಗೆ ಜೋಡಿಸಿ ಹೇಳುತ್ತಾರೆ.",
+        "ಸಂಖ್ಯೆ ಕಾರ್ಡ್‌ಗಳು; ಫಲಕ; ಸರಾಸರಿ/ಮಧ್ಯಕ/ಬಹುಲಕ ಹಂತಪಟ್ಟಿ",
+        "ಸರಾಸರಿ, ಮಧ್ಯಕ, ಬಹುಲಕ ಸರಿಯಾಗಿ ಲೆಕ್ಕಿಸಿದ್ದಾರೆಯೇ ಮತ್ತು ಸೂಕ್ತ ಅರ್ಥ ಹೇಳುತ್ತಾರೆಯೇ?",
+        "ಲೆಕ್ಕದ ತಪ್ಪು ಮತ್ತು ‘ಯಾವ ಅಳತೆ ಬೇಕು’ ಎಂಬ ತಪ್ಪು ನಿರ್ಧಾರವನ್ನು ಬೇರ್ಪಡಿಸಿ."
+      ],
+      [
+        "ಎರಡು ಸ್ಥಳಗಳ ಮಾಸಿಕ ಬೆಲೆ/ಎರಡು ತರಬೇತಿ ಗುಂಪಿನ ಓಟದ ಸಮಯದ ದತ್ತಾಂಶ ನೀಡಿ. ಹೊರಮೌಲ್ಯ ಇದೆಯೇ, ಯಾವ ಕೇಂದ್ರ ಮೌಲ್ಯ ಹೋಲಿಕೆಗೆ ಸೂಕ್ತ ಎಂದು ಗುಂಪು ಚರ್ಚಿಸಲಿ.",
+        "ಚುಕ್ಕೆಚಿತ್ರ ಮತ್ತು ಕೇಂದ್ರ ಮೌಲ್ಯಗಳಿಂದ ಹೋಲಿಕೆ ಮಾಡಿ; ತೀರ್ಮಾನಕ್ಕೆ ಸಾಕ್ಷಿ ಉಲ್ಲೇಖಿಸುತ್ತಾರೆ.",
+        "ಸಂದರ್ಭದ ದತ್ತಾಂಶ ಕಾರ್ಡ್‌ಗಳು; ಚುಕ್ಕೆಚಿತ್ರ; ಚರ್ಚಾ ಸೂಚನೆ",
+        "ತೀರ್ಮಾನವು ಒಂದೇ ಗರಿಷ್ಠ ಮೌಲ್ಯವಲ್ಲದೆ ಸಂಪೂರ್ಣ ದತ್ತಾಂಶವನ್ನು ಪರಿಗಣಿಸುತ್ತದೆಯೇ?",
+        "ವಿಭಿನ್ನ ಸಮರ್ಥನೀಯ ಆಯ್ಕೆಗಳಿಗೆ ಸಾಕ್ಷಿಯ ಆಧಾರ ಕೇಳಿ."
+      ],
+      [
+        "ಸಿದ್ಧ ದತ್ತಸಮೂಹಕ್ಕೆ ಚುಕ್ಕೆಚಿತ್ರ, ಸರಾಸರಿ/ಮಧ್ಯಕ/ಬಹುಲಕ ಮತ್ತು ಸೂಕ್ತ ಪ್ರತಿನಿಧಿ ಆಯ್ಕೆ ಕೇಳುವ ನಿರ್ಗಮನ ಕಾರ್ಯ ನೀಡಿ.",
+        "ಲೆಕ್ಕ, ಚಿತ್ರ ಮತ್ತು ಒಂದು ವಾಕ್ಯದ ಕಾರಣ ಸಲ್ಲಿಸುತ್ತಾರೆ; ಹೊರಮೌಲ್ಯ ಇದ್ದರೆ ಅದರ ಪರಿಣಾಮ ಸೂಚಿಸುತ್ತಾರೆ.",
+        "ನಿರ್ಗಮನ ಚೀಟಿ; ಸ್ವಪರಿಶೀಲನಾ ಪಟ್ಟಿ",
+        "ಚಿತ್ರಣ, ಲೆಕ್ಕ, ಪದಗಳ ಅರ್ಥ ಮತ್ತು ಸಂದರ್ಭದ ತೀರ್ಮಾನವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಪರಿಶೀಲಿಸಿ.",
+        "ಮುಂದಿನ ಪಾಠಕ್ಕೆ ದತ್ತಾಂಶ ಕ್ರಮಗೊಳಿಸುವಿಕೆ ಅಥವಾ ಸರಾಸರಿ/ಮಧ್ಯಕ ಮರುಅಭ್ಯಾಸವನ್ನು ದಾಖಲಿಸಿ."
+      ]
+    ]
+  },
+  {
+    "id": "grade7-kn-maths-p2-ch14-constructions-tilings",
+    "number": "ಅಧ್ಯಾಯ 14",
+    "title": "ರಚನೆಗಳು ಮತ್ತು ನೆಲ ಹಾಸುಗಳು",
+    "genre": "ಜ್ಯಾಮಿತಿ • ಮಾಪಕ/ಕಂಪಾಸ್ ನಿರ್ಮಾಣ, ಆಕೃತಿ ವಿನ್ಯಾಸ ಮತ್ತು ಟೈಲಿಂಗ್",
+    "author": "ಭಾಗ 2ರ ವಿಷಯಾಧಾರ: ಅಧಿಕೃತ ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಗಣಿತ ಪ್ರಕಾಶ (ಆಂಗ್ಲ); ಕನ್ನಡ ಆವೃತ್ತಿ ಪರಿಶೀಲಿಸಿ",
+    "pages": "ಕನ್ನಡ ಪಿಡಿಎಫ್ ಪರಿಶೀಲಿಸಿ ಭರ್ತಿ ಮಾಡಿ",
+    "periods": "ಸ್ಥಳೀಯ ವಾರ್ಷಿಕ ಯೋಜನೆಯಂತೆ ಭರ್ತಿ ಮಾಡಿ",
+    "theme": "ಮಾಪಕ, ಕಂಪಾಸ್ ಅಥವಾ ಹಗ್ಗದಿಂದ ಲಂಬಾರ್ಧಕ, ಕೋನಾರ್ಧಕ, ಕೋನದ ನಕಲು, ಸಮಾಂತರ ರೇಖೆ, ನಿಯತ ಷಡ್ಭುಜ ಮತ್ತು ವಿನ್ಯಾಸಗಳನ್ನು ನಿರ್ಮಿಸಿ ಪರಿಶೀಲಿಸುತ್ತಾರೆ. ಟೈಲಿಂಗ್ ಎಂದರೆ ಅಂತರ/ಮೇಲ್ಚಾಚುವಿಕೆ ಇಲ್ಲದೆ ಆಕಾರಗಳಿಂದ ಪ್ರದೇಶವನ್ನು ಮುಚ್ಚುವುದು; ಚೌಕಗಳ ಜಾಲ, ಟ್ಯಾಂಗ್ರಾಮ್ ಮತ್ತು ಕೋನಗಳ ಮೊತ್ತದ ಮೂಲಕ ಯಾವ ವಿನ್ಯಾಸ ಸಾಧ್ಯವೆಂದು ಕಾರಣಿಸುತ್ತಾರೆ.",
+    "outcomes": "• ಕೊಟ್ಟ ರೇಖಾಖಂಡದ ಲಂಬಾರ್ಧಕ ಮತ್ತು ಕೊಟ್ಟ ಕೋನದ ಕೋನಾರ್ಧಕವನ್ನು ಕ್ರಮಬದ್ಧವಾಗಿ ನಿರ್ಮಿಸುತ್ತಾರೆ.\n• ಸಮಾನ ಉದ್ದದ ಚಾಪ/ಬಾಹುಗಳಿಂದ ಕೋನ ನಕಲು ಅಥವಾ ಸಮಾಂತರ ರೇಖೆ ನಿರ್ಮಾಣದ ಕಾರಣ ಹೇಳುತ್ತಾರೆ.\n• ಆಯ್ದ ನಿಯತ ಆಕೃತಿ/ವಿನ್ಯಾಸವನ್ನು ಮಾಪಕ–ಕಂಪಾಸ್‌ನಿಂದ ನಿರ್ಮಿಸಿ ಪರಿಶೀಲಿಸುತ್ತಾರೆ.\n• ಟೈಲಿಂಗ್‌ನಲ್ಲಿ ಅಂತರ ಮತ್ತು ಮೇಲ್ಚಾಚುವಿಕೆ ಇಲ್ಲದಿರುವುದನ್ನು ಗುರುತಿಸುತ್ತಾರೆ.\n• 2×1 ಟೈಲ್‌ಗಳಿಂದ ಜಾಲ ಮುಚ್ಚಬಹುದೇ ಎಂದು ಉದಾಹರಣೆ, ಕೋನ ಅಥವಾ ಬಣ್ಣದ ಮಾದರಿಯಿಂದ ಸಮರ್ಥಿಸುತ್ತಾರೆ.",
+    "prereq": "ರೇಖಾಖಂಡ, ಮಧ್ಯಬಿಂದು, ಲಂಬ/ಸಮಾಂತರ ರೇಖೆ; ಕೋನ ಮತ್ತು 360° ಪೂರ್ಣ ಕೋನ; ತ್ರಿಭುಜ/ಚೌಕ/ಷಡ್ಭುಜದ ಪ್ರಾಥಮಿಕ ಗುಣಲಕ್ಷಣ; ಮಾಪಕ ಮತ್ತು ಕಂಪಾಸ್ ಸುರಕ್ಷಿತ ಬಳಕೆ.",
+    "values": "ನಿಖರತೆ ಮತ್ತು ಸಹನೆ • ಸೌಂದರ್ಯಬೋಧ • ಸುರಕ್ಷಿತ ಸಾಧನ ಬಳಕೆ • ನಿರ್ಮಾಣದ ಹಂತಕ್ಕೆ ಕಾರಣ ನೀಡುವುದು • ಸಹಕಾರದ ವಿನ್ಯಾಸ",
+    "focus": "ಲಂಬಾರ್ಧಕ; ಕೋನಾರ್ಧಕ; ಕೋನದ ನಕಲು; ಸಮಾಂತರ ರೇಖೆ; 60°/ನಿಯತ ಷಡ್ಭುಜ ಮತ್ತು ವಿನ್ಯಾಸ; ಟ್ಯಾಂಗ್ರಾಮ್; ಟೈಲಿಂಗ್; 360° ಸುತ್ತಲಿನ ಕೋನಗಳ ಮೊತ್ತ; 2×1 ಟೈಲ್ ಜಾಲದ ಸಾಧ್ಯತೆ.",
+    "project": "ಜಾಲಪತ್ರ ಅಥವಾ ನೆಲದ ಚೌಕದಲ್ಲಿ ಎರಡು ಆಯಾಮದ ಅಲಂಕಾರಿಕ ವಿನ್ಯಾಸ/ಕಮಾನು ರೂಪಿಸಿ. ಒಂದು ಭಾಗವನ್ನು ಕಂಪಾಸ್‌ನಿಂದ ಪುನರಾವರ್ತಿಸಿ; ಇನ್ನೊಂದು ಭಾಗದಲ್ಲಿ ಟ್ಯಾಂಗ್ರಾಮ್/ಆಯತಾಕಾರದ ಚೌಕಗಳನ್ನು ಅಂತರವಿಲ್ಲದೆ ಜೋಡಿಸಿ. ನಿರ್ಮಾಣದ ಹಂತ ಮತ್ತು ಹೊಂದುವ ಕೋನಗಳನ್ನು ಗುರುತಿಸಿ.",
+    "homework": "ರೇಖಾಖಂಡವನ್ನು ಬಿಡಿಸಿ ಅದರ ಲಂಬಾರ್ಧಕವನ್ನು ಮಾಪಕ–ಕಂಪಾಸ್‌ನಿಂದ ನಿರ್ಮಿಸಿ. ಸಮದೂರದ ಎರಡು ಗುರುತುಗಳನ್ನು ಅಳೆದು ಪರಿಶೀಲಿಸಿ; ಒಂದು ಚಿಕ್ಕ ಟೈಲಿಂಗ್ ಮಾದರಿಯನ್ನು ಚೌಕಜಾಲದಲ್ಲಿ ಬಿಡಿಸಿ.",
+    "support": "ದೊಡ್ಡ ಗಾತ್ರದ ಕಾಗದ, ಪೂರ್ವಗುರುತಿಸಿದ ರೇಖಾಖಂಡ, ನಿರ್ಮಾಣ ಹಂತದ ಚಿತ್ರ-ಪಟ್ಟಿ, ದಪ್ಪ ಕಂಪಾಸ್ ಹಿಡಿತ ಮತ್ತು ಕಾಗದದ ಟ್ಯಾಂಗ್ರಾಮ್ ತುಂಡು ನೀಡಿ. ಮೊದಲು ಮಾದರಿ ಪೂರ್ಣಗೊಳಿಸಿ ನಂತರ ಸ್ವತಂತ್ರ ನಿರ್ಮಾಣಕ್ಕೆ ಸಾಗಿರಿ.",
+    "extension": "ನಿಯತ ಷಡ್ಭುಜ/ಆರು-ತುದಿಯ ನಕ್ಷತ್ರ ನಿರ್ಮಿಸಿ ಅದರ ಸುತ್ತಲಿನ ಕೋನಗಳನ್ನು ಪರಿಶೀಲಿಸಿ. 2×1 ಟೈಲ್‌ಗಳಿಂದ ಕೆಲವು ಸಮಸಂಖ್ಯೆಯ/ಬೆಸಸಂಖ್ಯೆಯ ಜಾಲಗಳನ್ನು ಮುಚ್ಚಬಹುದೇ ಎಂದು ಬಣ್ಣಿಸಿದ ಚೌಕಗಳ ವಾದದಿಂದ ಸಮರ್ಥಿಸಿ.",
+    "note": "ಕಂಪಾಸ್ ತುದಿಯನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಬಳಸಿ; ಹಗ್ಗದಿಂದ ನಿರ್ಮಾಣ ತೋರಿಸಿದರೆ ನೆಲದ ಮೇಲೆ ಸಾಕಷ್ಟು ಜಾಗ ಇರಲಿ. ಸಾಧ್ಯವಾದ ಟೈಲಿಂಗ್‌ಗೆ ಅಂತರವೂ ಮೇಲ್ಚಾಚುವಿಕೆಯೂ ಇರಬಾರದು; ಅಸಾಧ್ಯತೆ ತೋರಿಸಲು ಬಣ್ಣ/ಜೋಡಿಗಳ ವಾದವನ್ನು ವಿದ್ಯಾರ್ಥಿಯಿಂದ ಕೇಳಿ.",
+    "stages": [
+      [
+        "ಶಾಲೆಯ ನೆಲದ ಚೌಕ/ಟೈಲ್ ವಿನ್ಯಾಸ ಅಥವಾ ಕಮಾನು/ರಂಗೋಲಿ ಮಾದರಿ ತೋರಿಸಿ. ‘ಅದೇ ಅಳತೆ ಮತ್ತು ಕೋನವನ್ನು ಹೇಗೆ ನಿಖರವಾಗಿ ಮತ್ತೆ ರಚಿಸಬಹುದು? ಅಂತರವಿಲ್ಲದೆ ಪ್ರದೇಶವನ್ನು ಹೇಗೆ ಮುಚ್ಚಬಹುದು?’ ಎಂದು ಕೇಳಿ.",
+        "ಮಾದರಿಯ ಪುನರಾವರ್ತನೆ, ಸಮಾನ ಕೋನ/ಉದ್ದ ಮತ್ತು ಅಂತರವಿಲ್ಲದ ಜೋಡಣೆ ಗಮನಿಸಿ ಊಹೆ ಹೇಳುತ್ತಾರೆ.",
+        "ಟೈಲ್/ವಿನ್ಯಾಸ ಚಿತ್ರ; ಚೌಕಜಾಲ; ಫಲಕ",
+        "ವಿದ್ಯಾರ್ಥಿಗಳು ರಚನೆ ಮತ್ತು ಟೈಲಿಂಗ್‌ನ ಸಮಸ್ಯೆಯನ್ನು ಬೇರ್ಪಡಿಸುತ್ತಾರೆಯೇ?",
+        "ಸ್ಥಳೀಯ ವಿನ್ಯಾಸ ಉದಾಹರಣೆ ಕಲಿಕೆಗೆ ಆಹ್ವಾನ ನೀಡುತ್ತದೆಯೇ ಎಂದು ಗಮನಿಸಿ."
+      ],
+      [
+        "ಗುಂಪಿಗೆ ಕಂಪಾಸ್–ಮಾಪಕ ನೀಡಿ ರೇಖಾಖಂಡದ ಲಂಬಾರ್ಧಕ, ಕೋನಾರ್ಧಕ ಅಥವಾ ಕೋನ ನಕಲು ಪ್ರಯೋಗಿಸಿ. ಕಾಗದದ 2×1 ಟೈಲ್/ಟ್ಯಾಂಗ್ರಾಮ್‌ನಿಂದ ಸಣ್ಣ ಜಾಲವನ್ನು ಮುಚ್ಚಲು ಅವಕಾಶ ಕೊಡಿ.",
+        "ಚಾಪಗಳನ್ನು ಬಿಡಿಸಿ ಸಮದೂರ ಬಿಂದುಗಳನ್ನು ಗುರುತಿಸುತ್ತಾರೆ; ಟೈಲ್‌ಗಳನ್ನು ತಿರುಗಿಸಿ ಅಂತರವಿಲ್ಲದೆ ಜೋಡಿಸುವ ಪ್ರಯತ್ನ ಮಾಡುತ್ತಾರೆ.",
+        "ಮಾಪಕ; ಕಂಪಾಸ್; ಹಗ್ಗ; ಜಾಲಪತ್ರ; ಕಾಗದದ ಟೈಲ್/ಟ್ಯಾಂಗ್ರಾಮ್",
+        "ನಿರ್ಮಾಣದ ಚಾಪಗಳು ಸಮಾನವಾಗಿವೆಯೇ? ಟೈಲ್‌ಗಳಲ್ಲಿ ಅಂತರ/ಮೇಲ್ಚಾಚುವಿಕೆ ಇದೆಯೇ?",
+        "ಕಂಪಾಸ್ ಹಿಡಿತ, ತುದಿ ಸುರಕ್ಷತೆ ಮತ್ತು ಜೋಡಣೆ ಕ್ರಮದಲ್ಲಿ ನೆರವು ದಾಖಲಿಸಿ."
+      ],
+      [
+        "ಸಮಾನ ತ್ರಿಜ್ಯದ ಚಾಪಗಳಿಂದ ಮಧ್ಯಬಿಂದು/ಕೋನಾರ್ಧಕ ಹೇಗೆ ಸಿಗುತ್ತದೆ ಎಂದು ವಿವರಿಸಿ; ಪೂರ್ಣ ಕೋನ 360° ಎಂಬುದನ್ನು ಟೈಲಿಂಗ್ ಸುತ್ತಲಿನ ಕೋನಗಳಿಗೆ ಜೋಡಿಸಿ. 2×1 ಟೈಲ್ ಜಾಲದ ಬಣ್ಣದ ಉದಾಹರಣೆ ತೋರಿಸಿ.",
+        "ನಿರ್ಮಾಣದ ಹಂತಗಳನ್ನು ಕ್ರಮವಾಗಿ ಹೇಳುತ್ತಾರೆ; ಒಂದು ಕೋನದಿಂದ/ಬಣ್ಣ ಮಾದರಿಯಿಂದ ಟೈಲಿಂಗ್ ಸಾಧ್ಯತೆ ಸಮರ್ಥಿಸುತ್ತಾರೆ.",
+        "ಹಂತ-ಚಿತ್ರ; ಬಣ್ಣಿಸಿದ ಚೌಕಜಾಲ; ನಿಯತ ಬಹುಭುಜ ಮಾದರಿ; ಫಲಕ",
+        "‘ಹೀಗೆ ಕಾಣುತ್ತದೆ’ ಎನ್ನುವುದಕ್ಕಿಂತ ಜ್ಯಾಮಿತೀಯ/ಗಣಿತೀಯ ಕಾರಣ ಕೊಡುತ್ತಾರೆಯೇ?",
+        "ನಿರ್ಮಾಣ ಮತ್ತು ಅದರ ಸಮರ್ಥನೆಯನ್ನು ಬೇರೆಬೇರೆ ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ."
+      ],
+      [
+        "ಒಂದು ಸರಳ ಕಮಾನು/ಆರು-ಪಂಖುಡಿ ವಿನ್ಯಾಸ ರಚಿಸಲು ಮತ್ತು ಬೆಸ/ಸಮ ಸಾಲುಗಳ ಚೌಕಜಾಲವನ್ನು ಟೈಲ್ ಮಾಡಲು ಸವಾಲು ನೀಡಿ. ಸಾಧ್ಯವಿಲ್ಲದ ವಿನ್ಯಾಸಕ್ಕೆ ಕಾರಣ ಹುಡುಕಲು ಮಾರ್ಗದರ್ಶಿಸಿ.",
+        "ಗುಂಪು ವಿನ್ಯಾಸ ಪೂರ್ಣಗೊಳಿಸಿ; ಸಾಧ್ಯತೆ/ಅಸಾಧ್ಯತೆಗಾಗಿ ಚಿತ್ರ, ಕೋನ ಅಥವಾ ಪರ್ಯಾಯ ಬಣ್ಣದ ವಾದ ಮಂಡಿಸುತ್ತಾರೆ.",
+        "ಜಾಲಪತ್ರ; ಬಣ್ಣದ ಪೆನ್ಸಿಲ್; ಕಂಪಾಸ್; ಟೈಲ್ ತುಂಡುಗಳು",
+        "ವಿನ್ಯಾಸದ ಪುನರಾವರ್ತನೆ ನಿಖರವೇ? ಅಸಾಧ್ಯತೆಯ ವಾದ ಎಲ್ಲ ಚೌಕಗಳನ್ನು ಪರಿಗಣಿಸುತ್ತದೆಯೇ?",
+        "ಬಹು ಪರಿಹಾರಗಳಿಗೆ ಅವಕಾಶ ನೀಡಿ; ಸರಳ ವಿನ್ಯಾಸಕ್ಕೆ ಸೌಂದರ್ಯ ಮತ್ತು ನಿಖರತೆ ಎರಡನ್ನೂ ಮೆಚ್ಚಿರಿ."
+      ],
+      [
+        "ಒಂದು ರೇಖಾಖಂಡದ ಲಂಬಾರ್ಧಕ ನಿರ್ಮಾಣ ಮತ್ತು ಒಂದು ಜಾಲಕ್ಕೆ ಟೈಲಿಂಗ್ ನಿರ್ಧಾರ ಮಾಡುವ ನಿರ್ಗಮನ ಕಾರ್ಯ ನೀಡಿ.",
+        "ಹಂತ ಚಿತ್ರಿಸಿ, ಸಮದೂರ ಅಳೆದು ಪರಿಶೀಲಿಸುತ್ತಾರೆ; ಜಾಲ ಮುಚ್ಚುವ/ಮುಚ್ಚದ ಕಾರಣ ಬರೆಯುತ್ತಾರೆ.",
+        "ನಿರ್ಗಮನ ಚೀಟಿ; ಮಾಪಕ/ಕಂಪಾಸ್; ಚೌಕಜಾಲ",
+        "ನಿರ್ಮಾಣದ ನಿಖರತೆ, ಸುರಕ್ಷತೆ ಮತ್ತು ಟೈಲಿಂಗ್ ವ್ಯಾಖ್ಯಾನದ ಬಳಕೆಯನ್ನು ಪರಿಶೀಲಿಸಿ.",
+        "ಸಾಧನ ಕೌಶಲ್ಯಕ್ಕೆ ಹೆಚ್ಚುವರಿ ಅಭ್ಯಾಸವೋ, ಕಾರಣ ಹೇಳುವಿಕೆಗೆ ಚರ್ಚೆಯೋ ಬೇಕೆಂದು ದಾಖಲಿಸಿ."
+      ]
+    ]
+  },
+  {
+    "id": "grade7-kn-maths-p2-ch15-finding-unknown",
+    "number": "ಅಧ್ಯಾಯ 15",
+    "title": "ಅವ್ಯಕ್ತವನ್ನು ಕಂಡುಹಿಡಿಯುವುದು",
+    "genre": "ಬೀಜಗಣಿತ • ಚರಾಕ್ಷರಗಳು, ಸಮೀಕರಣಗಳು ಮತ್ತು ಸಮಸ್ಯೆ ಪರಿಹಾರ",
+    "author": "ಭಾಗ 2ರ ವಿಷಯಾಧಾರ: ಅಧಿಕೃತ ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಗಣಿತ ಪ್ರಕಾಶ (ಆಂಗ್ಲ); ಕನ್ನಡ ಆವೃತ್ತಿ ಪರಿಶೀಲಿಸಿ",
+    "pages": "ಕನ್ನಡ ಪಿಡಿಎಫ್ ಪರಿಶೀಲಿಸಿ ಭರ್ತಿ ಮಾಡಿ",
+    "periods": "ಸ್ಥಳೀಯ ವಾರ್ಷಿಕ ಯೋಜನೆಯಂತೆ ಭರ್ತಿ ಮಾಡಿ",
+    "theme": "ತಿಳಿಯದ ಸಂಖ್ಯೆಗೆ ಅಕ್ಷರ/ಚರವನ್ನು ನೀಡಿ ಅದನ್ನು ಅಭಿವ್ಯಕ್ತಿ ಮತ್ತು ಸಮೀಕರಣಗಳಲ್ಲಿ ಪ್ರತಿನಿಧಿಸುತ್ತಾರೆ. ತೂಕದ ತಕ್ಕಡಿ/ಸಮತೋಲನದಿಂದ ಸಮಾನತೆಯ ಎರಡೂ ಬದಿಗಳಲ್ಲಿ ಒಂದೇ ಕ್ರಿಯೆ ಮಾಡುವ ಅರ್ಥ ರೂಪಿಸಿ, ವಿರುದ್ಧ ಕ್ರಿಯೆಗಳಿಂದ ಸರಳ ಸಮೀಕರಣ ಪರಿಹರಿಸಿ ಉತ್ತರವನ್ನು ಬದಲಿಸಿ ಪರಿಶೀಲಿಸುತ್ತಾರೆ; ಪದಪ್ರಶ್ನೆ ಮತ್ತು ಸಂಖ್ಯಾ ಮಾದರಿಗಳಿಗೂ ಅನ್ವಯಿಸುತ್ತಾರೆ.",
+    "outcomes": "• ತಿಳಿಯದ ಪ್ರಮಾಣವನ್ನು ಅಕ್ಷರ/ಚರದಿಂದ ಪ್ರತಿನಿಧಿಸುತ್ತಾರೆ.\n• ಸಮತೋಲನ ಚಿತ್ರ ಅಥವಾ ಸಂದರ್ಭದಿಂದ ಸರಳ ಸಮೀಕರಣ ರೂಪಿಸುತ್ತಾರೆ.\n• ಎರಡೂ ಬದಿಗಳಲ್ಲಿ ಸಮಾನ ಕ್ರಿಯೆ ಉಳಿಸಿ ಸೇರಿಸುವಿಕೆ/ಕಳೆಯುವಿಕೆ/ಗುಣಾಕಾರ/ಭಾಗಾಕಾರದ ವಿರುದ್ಧ ಕ್ರಿಯೆಯಿಂದ ಪರಿಹರಿಸುತ್ತಾರೆ.\n• ಚರ ಎರಡೂ ಬದಿಗಳಲ್ಲಿರುವ ಸರಳ ಸಮೀಕರಣವನ್ನು ಕ್ರಮಬದ್ಧವಾಗಿ ಪರಿಹರಿಸುತ್ತಾರೆ.\n• ಉತ್ತರವನ್ನು ಮೂಲ ಸಮೀಕರಣದಲ್ಲಿ ಬದಲಿಸಿ ಪರಿಶೀಲಿಸಿ, ಪದಪ್ರಶ್ನೆಗೆ ಅರ್ಥಪೂರ್ಣ ಉತ್ತರ ಬರೆಯುತ್ತಾರೆ.",
+    "prereq": "ಪೂರ್ಣಾಂಕಗಳ ನಾಲ್ಕು ಕ್ರಿಯೆಗಳು; ಸಮಾನ ಚಿಹ್ನೆ; ಕಾರ್ಯಗಳ ಕ್ರಮದ ಸರಳ ಅರಿವು; ಸಂಖ್ಯೆ ಮಾದರಿ ಮತ್ತು ಖಾಲಿ ಚೌಕದ ಬಳಕೆ.",
+    "values": "ಸಮತೋಲನ ಮತ್ತು ಸಮಾನತೆ • ಕ್ರಮಬದ್ಧ ತರ್ಕ • ಪರಿಹಾರ ಪರಿಶೀಲನೆ • ಅಜ್ಞಾತದ ಬಗ್ಗೆ ಪ್ರಶ್ನೆ ಕೇಳುವ ಆತ್ಮವಿಶ್ವಾಸ",
+    "focus": "ಅಜ್ಞಾತ/ಚರಾಕ್ಷರ; ಸಂಖ್ಯಾ ಅಭಿವ್ಯಕ್ತಿ; ಸಮೀಕರಣ; ತಕ್ಕಡಿ ಮಾದರಿ; ವಿರುದ್ಧ ಕ್ರಿಯೆಗಳು; ಎರಡೂ ಬದಿಗಳಲ್ಲಿ ಒಂದೇ ಕ್ರಿಯೆ; ಚರ ಎರಡೂ ಕಡೆ ಇರುವ ಸಮೀಕರಣ; ಬದಲಿಸಿ ಪರಿಶೀಲನೆ; ಪದಪ್ರಶ್ನೆ/ಮಾದರಿ.",
+    "project": "ಒಂದು ಸರಳ ದಿನನಿತ್ಯದ ಖರ್ಚು ಅಥವಾ ಸಂಖ್ಯಾ ಮಾದರಿಯ ಕಥೆ ರಚಿಸಿ. ತಿಳಿಯದ ಪ್ರಮಾಣಕ್ಕೆ x ಕೊಟ್ಟು ಸಮೀಕರಣ ರೂಪಿಸಿ; ಸಮೀಕರಣವನ್ನು ಎರಡು ವಿಧಾನಗಳಲ್ಲಿ ಪರಿಹರಿಸಿ, ಉತ್ತರ ಮೂಲ ಸಂದರ್ಭಕ್ಕೆ ಹೊಂದುತ್ತದೆ ಎಂದು ಪರಿಶೀಲಿಸಿ.",
+    "homework": "ಮೂರು ಪದಪ್ರಶ್ನೆಗಳನ್ನು ಸಮೀಕರಣವಾಗಿ ಬರೆಯಿರಿ (ಒಂದು ಸೇರಿಸುವಿಕೆ/ಕಳೆಯುವಿಕೆ, ಒಂದು ಗುಣಾಕಾರ, ಒಂದು ಎರಡೂ ಬದಿಯಲ್ಲಿ ಚರ ಇರುವ ಸರಳ ಮಾದರಿ). ಪರಿಹರಿಸಿ, ಉತ್ತರವನ್ನು ಮೂಲ ಸಮೀಕರಣದಲ್ಲಿ ಬದಲಿಸಿ ಪರಿಶೀಲಿಸಿ.",
+    "support": "ತಕ್ಕಡಿ ಚಿತ್ರ, ಸಮತೋಲನದ ಎರಡು ಬದಿಗಳ ಕಾಗದದ ತಟ್ಟೆಗಳು, ಬಣ್ಣದ ಚರ-ಕಾರ್ಡ್ ಮತ್ತು ವಿರುದ್ಧ ಕ್ರಿಯೆಗಳ ಚಿಕ್ಕ ಪಟ್ಟಿಯನ್ನು ಬಳಸಿ. ಮೊದಲು ಒಂದು ಹಂತದ ಸಮೀಕರಣ, ನಂತರ ಎರಡು ಹಂತದ ಸಮಸ್ಯೆಗೆ ಸಾಗಿರಿ.",
+    "extension": "ಸಂಖ್ಯಾ ವಿನ್ಯಾಸದ nನೇ ಹಂತಕ್ಕೆ ಸರಳ ಅಭಿವ್ಯಕ್ತಿ ರೂಪಿಸಿ, ನಿರ್ದಿಷ್ಟ ಮೌಲ್ಯಕ್ಕೆ ಯಾವ ಹಂತ ಬರುತ್ತದೆ ಎಂದು ಸಮೀಕರಣದಿಂದ ಹುಡುಕಿ. ಸರಳವಾಗಿ ಪರಿಹಾರವಿಲ್ಲದ ಅಥವಾ ಹಲವು ಪರಿಹಾರಗಳಿರುವ ಸಮೀಕರಣದ ಉದಾಹರಣೆ ರಚಿಸಿ ಚರ್ಚಿಸಿ.",
+    "note": "ಸಮೀಕರಣದ ಎರಡೂ ಬದಿಗಳಲ್ಲಿ ಒಂದೇ ಕ್ರಿಯೆ ಮಾಡಿದಾಗ ಸಮಾನತೆ ಉಳಿಯುತ್ತದೆ ಎಂಬ ತಕ್ಕಡಿ ಕಲ್ಪನೆಗೆ ಒತ್ತು ನೀಡಿ. ‘ಪದವನ್ನು ಬದಿಗೆ ಕಳುಹಿಸಿದಾಗ ಚಿಹ್ನೆ ಬದಲಿಸು’ ಎಂದು ಯಾಂತ್ರಿಕವಾಗಿ ಹೇಳುವುದಕ್ಕಿಂತ ವಿರುದ್ಧ ಕ್ರಿಯೆಯಿಂದ ಕಾರಣ ಸಮರ್ಥಿಸಿ; ಕೊನೆಯಲ್ಲಿ ಮೂಲ ಸಮೀಕರಣದಲ್ಲಿ ಮೌಲ್ಯವನ್ನು ಬದಲಿಸಿ ಪರಿಶೀಲಿಸಿ.",
+    "stages": [
+      [
+        "ಒಂದು ಸಮತೋಲನ ತಕ್ಕಡಿಯ ಚಿತ್ರ ತೋರಿಸಿ: ಒಂದು ಬದಿಯಲ್ಲಿ ಮುಚ್ಚಿದ ಚೀಲ ಮತ್ತು ತೂಕ, ಮತ್ತೊಂದು ಬದಿಯಲ್ಲಿ ತಿಳಿದ ತೂಕ. ‘ಚೀಲದ ತೂಕವನ್ನು ಹೇಗೆ ಕಂಡುಹಿಡಿಯಬಹುದು; ಎರಡೂ ಬದಿಗಳ ಸಮತೋಲನ ಹೇಗೆ ಉಳಿಯುತ್ತದೆ?’ ಎಂದು ಕೇಳಿ.",
+        "ತೂಕ ತೆಗೆದು/ಸೇರಿಸುವ ಕಲ್ಪನೆ ಹೇಳಿ; ಚೀಲದ ತೂಕಕ್ಕೆ ಖಾಲಿ ಚೌಕ ಅಥವಾ ಅಕ್ಷರ ಸೂಚಿಸುತ್ತಾರೆ.",
+        "ತಕ್ಕಡಿ ಚಿತ್ರ/ಸಮತೋಲನದ ಕಾಗದದ ಮಾದರಿ; ತೂಕ ಕಾರ್ಡ್; ಫಲಕ",
+        "ಅಜ್ಞಾತವನ್ನು ಸಂಕೇತಿಸಿ ಸಮಾನತೆ ಕಾಪಾಡಬೇಕೆಂದು ಗುರುತಿಸುತ್ತಾರೆಯೇ?",
+        "‘ಸಮೀಕರಣ’ವನ್ನು ಕೇವಲ ಲೆಕ್ಕದ ಉತ್ತರವೆಂದು ಭಾವಿಸುವವರನ್ನು ಗಮನಿಸಿ."
+      ],
+      [
+        "ಕೌಂಟರ್/ತಕ್ಕಡಿ ಮಾದರಿಯಲ್ಲಿ x+3=8 ಅಥವಾ 3x=12 ತೋರಿಸಿ. ಎರಡೂ ಬದಿಗಳಿಂದ/ಎರಡೂ ಬದಿಗೆ ಒಂದೇ ಪ್ರಮಾಣ ಸೇರಿಸಿ ತೆಗೆದುಹಾಕಿ ಸಮತೋಲನ ಉಳಿಯುವುದನ್ನು ವಿದ್ಯಾರ್ಥಿಗಳಿಂದ ಪ್ರಯೋಗಿಸಿ.",
+        "ಗುಂಪಾಗಿ ಸಮತೋಲನ ಮಾದರಿ ನಿರ್ಮಿಸಿ; ಅಜ್ಞಾತವನ್ನು ಪ್ರತ್ಯೇಕಿಸುವ ಹಂತಗಳನ್ನು ಚಿತ್ರಿಸಿ ಮತ್ತು ಸಂಖ್ಯೆಯಿಂದ ಪರಿಶೀಲಿಸುತ್ತಾರೆ.",
+        "ಎರಡು ಕಾಗದದ ತಟ್ಟೆ; ಕೌಂಟರ್; x ಕಾರ್ಡ್; ಸಮೀಕರಣ ಕಾರ್ಡ್",
+        "ಪ್ರತಿ ಹಂತದಲ್ಲಿ ಎರಡೂ ಬದಿಗಳಲ್ಲಿ ಒಂದೇ ಕ್ರಿಯೆ ಮಾಡುತ್ತಾರೆಯೇ?",
+        "ಒಂದು ಬದಿಯಲ್ಲೇ ಕ್ರಿಯೆ ಮಾಡುವ ತಪ್ಪು ಕಂಡರೆ ತಕ್ಕಡಿ ಮಾದರಿಗೆ ಹಿಂತಿರುಗಿಸಿ."
+      ],
+      [
+        "ಚರಾಕ್ಷರ, ಅಭಿವ್ಯಕ್ತಿ, ಸಮೀಕರಣ ಮತ್ತು ಪರಿಹಾರಗಳ ಅರ್ಥವನ್ನು ಹೆಸರಿಸಿ. ವಿರುದ್ಧ ಕ್ರಿಯೆಗಳಿಂದ ಸರಳ ಸಮೀಕರಣ ಹಾಗೂ ಚರ ಎರಡೂ ಬದಿಯಲ್ಲಿರುವ ಸರಳ ಉದಾಹರಣೆಯನ್ನು ಕ್ರಮಬದ್ಧವಾಗಿ ಬಗೆಹರಿಸಿ ಪರಿಶೀಲಿಸಿ.",
+        "ಹಂತಗಳನ್ನು ಬರೆಯುತ್ತಾರೆ; ಪ್ರತಿ ಹಂತದಲ್ಲಿ ಸಮಾನತೆ ಏಕೆ ಉಳಿಯುತ್ತದೆಂದು ಹೇಳುತ್ತಾರೆ; ಪರಿಹಾರವನ್ನು ಮೂಲ ಸಮೀಕರಣದಲ್ಲಿ ಬದಲಿಸುತ್ತಾರೆ.",
+        "ವಿರುದ್ಧ ಕ್ರಿಯೆಗಳ ಪಟ್ಟಿಕೆ; ಫಲಕ; ಹಂತ-ಹಂತದ ಉದಾಹರಣೆ",
+        "ಪರಿಹಾರ ಸರಿಯೇ ಮತ್ತು ಮೂಲ ಸಮೀಕರಣದಲ್ಲಿ ಎಡಭಾಗ=ಬಲಭಾಗ ಆಗುತ್ತದೆಯೇ?",
+        "ಲೆಕ್ಕದ ತಪ್ಪು, ಚಿಹ್ನೆಯ ತಪ್ಪು ಮತ್ತು ಸಮಾನತೆ ಕಾಪಾಡದ ತಪ್ಪನ್ನು ಪ್ರತ್ಯೇಕಿಸಿ."
+      ],
+      [
+        "ಒಂದು ಕಲ್ಪಿತ ಖರ್ಚು ಸಮಸ್ಯೆ ನೀಡಿ: ಪ್ರತಿ ವಸ್ತುವಿಗೆ ₹25 ಮತ್ತು ನಿಗದಿತ ₹50 ವಿತರಣೆ ಶುಲ್ಕ ಸೇರಿ ಒಟ್ಟು ₹200. ಎಷ್ಟು ವಸ್ತುಗಳನ್ನು ಖರೀದಿಸಲಾಗಿದೆ ಎಂದು ಸಮೀಕರಣದಿಂದ ಕಂಡುಹಿಡಿಯಿರಿ.",
+        "ಅಜ್ಞಾತಕ್ಕೆ x ನೀಡಿ ಸಮೀಕರಣ ರೂಪಿಸಿ, ಪರಿಹರಿಸಿ, ಹಣ/ವಸ್ತುಗಳ ಸಂಖ್ಯೆಯ ಅರ್ಥಕ್ಕೆ ಹೊಂದುತ್ತದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸುತ್ತಾರೆ.",
+        "ಸಂದರ್ಭ ಕಾರ್ಡ್; ರೂಪಾಯಿ ಚೀಟಿ; ಸಮೀಕರಣ ಹಾಳೆ; ಸಂಖ್ಯಾ ಮಾದರಿ ಕಾರ್ಡ್",
+        "ಸಂದರ್ಭದಿಂದ ಸಮೀಕರಣ ಸರಿಯಾಗಿ ರೂಪಿಸಿದ್ದಾರೆಯೇ ಮತ್ತು ಉತ್ತರದ ಘಟಕ ಸರಿಯೇ?",
+        "ಚರವನ್ನು ವ್ಯಾಖ್ಯಾನಿಸಿ ಬರೆಯಲು ಹೇಳಿ; ಲೆಕ್ಕಕ್ಕಿಂತ ಮಾದರೀಕರಣಕ್ಕೂ ಗಮನಿಸಿ."
+      ],
+      [
+        "ಒಂದು ಸಮತೋಲನ-ಚಿತ್ರ, ಒಂದು ಪದಪ್ರಶ್ನೆ ಮತ್ತು ಒಂದು ಸರಳ ಸಮೀಕರಣದಲ್ಲಿ ತಪ್ಪು ಗುರುತಿಸುವ ನಿರ್ಗಮನ ಕಾರ್ಯ ನೀಡಿ.",
+        "ಚರ ವ್ಯಾಖ್ಯಾನಿಸಿ, ಸಮೀಕರಣ ಬರೆಯುತ್ತಾರೆ, ಪರಿಹರಿಸಿ ಬದಲಿಸಿ ಪರಿಶೀಲಿಸುತ್ತಾರೆ; ಒಂದು ತಪ್ಪಿನ ಕಾರಣವನ್ನು ಸೂಚಿಸುತ್ತಾರೆ.",
+        "ನಿರ್ಗಮನ ಚೀಟಿ; ತಕ್ಕಡಿ ಚಿತ್ರ; ಸ್ವಪರಿಶೀಲನಾ ಪಟ್ಟಿ",
+        "ಮಾದರೀಕರಣ, ಪರಿಹಾರ ಕ್ರಮ, ಪರಿಶೀಲನೆ ಮತ್ತು ಕಾರಣವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಪರಿಶೀಲಿಸಿ.",
+        "ಮುಂದಿನ ಕಲಿಕೆಗೆ ಸಮೀಕರಣ ರಚನೆ, ವಿರುದ್ಧ ಕ್ರಿಯೆ ಅಥವಾ ಚರ ಎರಡೂ ಬದಿ—ಯಾವುದು ಮರುಅಭ್ಯಾಸ ಬೇಕು ಎಂದು ದಾಖಲಿಸಿ."
+      ]
+    ]
+  }
+];
+
+const WEBSITE_SETTINGS={resourceCenterName:"SCHOOL RESOURCE CENTER",websiteName:"BILINGUAL MEDIUM SCHOOLS",websiteUrl:"https://bilingualmediumschools.blogspot.com/"};
+const STAGES=[['ತೊಡಗಿಸಿಕೊಳ್ಳುವಿಕೆ','ಆಸಕ್ತಿ ಮೂಡಿಸಿ'],['ಅನ್ವೇಷಣೆ','ಕೈಯಾರೆ ಹುಡುಕಿ'],['ವಿವರಣೆ','ಅರ್ಥ ರೂಪಿಸಿ'],['ವಿಸ್ತರಣೆ','ಹೊಸ ಸಂದರ್ಭಕ್ಕೆ ಬಳಸಿ'],['ಮೌಲ್ಯಮಾಪನ','ಕಲಿಕೆಯನ್ನು ಪರಿಶೀಲಿಸಿ']];
+const KEY='ktbs_grade7_kannada_maths_part2_2026_27_v1';
+const $=s=>document.querySelector(s);
+let compact=false;
+function esc(value){return String(value??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;')}
+function printText(value){return esc(value).replace(/\r?\n/g,'<br>')}
+function field(label,cls,value,type='text',placeholder=''){
+  const title=`<label>${esc(label)}</label>`;
+  if(type==='textarea')return `<div class="field">${title}<textarea class="${cls}" placeholder="${esc(placeholder)}">${esc(value)}</textarea></div>`;
+  return `<div class="field">${title}<input class="${cls}" type="${esc(type)}" value="${esc(value)}" placeholder="${esc(placeholder)}"></div>`;
+}
+function area(label,cls,value,placeholder=''){return `<div class="info-block"><strong>${esc(label)}</strong><textarea class="${cls}" placeholder="${esc(placeholder)}">${esc(value)}</textarea></div>`}
+function stageRows(stages){return STAGES.map((s,i)=>{const d=stages[i]||['','','','',''];return `<tr><td class="stage">${s[0]}<span>${s[1]}</span></td><td><textarea class="s-teacher">${esc(d[0])}</textarea></td><td><textarea class="s-student">${esc(d[1])}</textarea></td><td><textarea class="s-material">${esc(d[2])}</textarea></td><td><textarea class="s-check">${esc(d[3])}</textarea></td><td><textarea class="s-reflect" placeholder="ಯಾವುದು ಚೆನ್ನಾಯಿತು? ಮುಂದೇನು ಬದಲಾಯಿಸಬೇಕು?">${esc(d[4]||'')}</textarea></td></tr>`}).join('')}
+function cardHtml(lesson,overrides={}){const v=(key)=>overrides[key]??lesson[key]??'';const rows=overrides.stages||lesson.stages;return `<article class="lesson-card" data-id="${esc(lesson.id)}"><div class="lesson-head"><div class="lesson-title"><span class="no">${esc(lesson.number)}</span><h3>${esc(v('title'))}</h3></div><div class="actions screen-only"><button class="btn light small" onclick="printSingle(this)">▤ ಈ ಯೋಜನೆ ಮುದ್ರಿಸಿ</button><button class="btn danger small" onclick="removeCard(this)">× ತೆಗೆದುಹಾಕಿ</button></div></div><div class="meta-grid">${field('ಅಧ್ಯಾಯದ ಹೆಸರು','f-title',v('title'))}${field('ಪಾಠದ ಸ್ವರೂಪ','f-genre',v('genre'))}${field('ಮೂಲ / ಪಠ್ಯಪುಸ್ತಕ','f-author',v('author'))}${field('ಪುಟ ಸಂಖ್ಯೆ','f-pages',v('pages'))}${field('ಬೋಧನಾ ಅವಧಿ','f-periods',v('periods'))}</div><div class="overview">${area('ವಿಷಯ / ಮುಖ್ಯ ಕಲ್ಪನೆ','f-theme',v('theme'))}${area('ಕಲಿಕೆಯ ನಿರೀಕ್ಷಿತ ಫಲಿತಾಂಶಗಳು','f-outcomes',v('outcomes'))}<div>${area('ಪೂರ್ವಜ್ಞಾನ','f-prereq',v('prereq'))}${area('ಮೌಲ್ಯ / ಜೀವನ ಕೌಶಲ','f-values',v('values'))}</div></div><div class="table-wrap"><table class="plan-table"><thead><tr><th>5E ಹಂತ</th><th>ಶಿಕ್ಷಕರ ಚಟುವಟಿಕೆ / ಮಾರ್ಗದರ್ಶನ</th><th>ವಿದ್ಯಾರ್ಥಿಗಳ ಚಟುವಟಿಕೆ</th><th>ಬೋಧನಾ ಸಾಮಗ್ರಿ</th><th>ಮೌಲ್ಯಮಾಪನದ ಸಾಕ್ಷಿ</th><th>ಶಿಕ್ಷಕರ ಚಿಂತನೆ / ಮುಂದಿನ ಕ್ರಮ</th></tr></thead><tbody>${stageRows(rows)}</tbody></table></div><div class="post-grid">${field('ಮುಖ್ಯ ಗಣಿತ ಕಲ್ಪನೆಗಳು','f-focus',v('focus'),'textarea')}${field('ವಿಸ್ತರಣಾ ಚಟುವಟಿಕೆ / ಯೋಜನೆ','f-project',v('project'),'textarea')}${field('ಗೃಹಕಾರ್ಯ / ಮುಂದಿನ ಕಲಿಕೆ','f-homework',v('homework'),'textarea')}${field('ಕಲಿಕೆಗೆ ಬೆಂಬಲ','f-support',v('support'),'textarea')}${field('ಮುನ್ನಡೆಯುವವರಿಗೆ ಸವಾಲು','f-extension',v('extension'),'textarea')}<div class="info-block"><strong>ಶಿಕ್ಷಕರ ಟಿಪ್ಪಣಿ</strong><textarea class="f-note" placeholder="ಸ್ಥಳೀಯ ಉದಾಹರಣೆ, ಬದಲಾವಣೆ ಅಥವಾ ಗಮನಿಕೆ ಸೇರಿಸಿ">${esc(v('note'))}</textarea></div></div><section class="assessment"><h4>ಮೌಲ್ಯಮಾಪನದ ರೂಪರೇಖೆ — ಪಾಠದ ನಂತರ ಮಟ್ಟ/ಟಿಪ್ಪಣಿ ದಾಖಲಿಸಿ</h4><div class="rubric"><div><b>ಕಲ್ಪನೆ</b><span>ಗಣಿತದ ಕಲ್ಪನೆಯನ್ನು ಸರಿಯಾಗಿ ಗುರುತಿಸಿ ವಿವರಿಸುತ್ತಾರೆ.</span></div><div><b>ವಿಧಾನ</b><span>ಸೂಕ್ತ ಮಾದರಿ, ಅಳತೆ ಅಥವಾ ಹಂತಗಳನ್ನು ಬಳಸುತ್ತಾರೆ.</span></div><div><b>ಕಾರಣ</b><span>ಉತ್ತರಕ್ಕೆ ಚಿತ್ರ, ಲೆಕ್ಕ ಅಥವಾ ವಾಕ್ಯದಿಂದ ಕಾರಣ ನೀಡುತ್ತಾರೆ.</span></div><div><b>ಸಹಭಾಗಿತ್ವ</b><span>ಚಟುವಟಿಕೆಯಲ್ಲಿ ಭಾಗವಹಿಸಿ ತಮ್ಮ ಆಲೋಚನೆ ಹಂಚಿಕೊಳ್ಳುತ್ತಾರೆ.</span></div></div></section><div class="sign-row"><div class="field"><label>ಶಿಕ್ಷಕರ ಸಹಿ</label><input class="f-teacher-sign" value="${esc(v('teacherSign'))}"></div><div class="field"><label>ಮುಖ್ಯಶಿಕ್ಷಕರ ಸಹಿ</label><input class="f-hm-sign" value="${esc(v('hmSign'))}"></div><div class="field"><label>ಮುಂದುವರಿಕೆ ದಿನಾಂಕ</label><input class="f-follow-date" type="date" value="${esc(v('followDate'))}"></div></div><div class="print-note">7ನೇ ತರಗತಿ • ಗಣಿತ ಭಾಗ 2 • ${esc(v('title'))}</div></article>`}
+function rebuildPicker(){const picker=$('#lessonPicker');picker.innerHTML='<option value="">ಅಧ್ಯಾಯ ಆಯ್ಕೆಮಾಡಿ…</option>'+LESSONS.map(l=>`<option value="${esc(l.id)}">${esc(l.number)} — ${esc(l.title)}</option>`).join('')}
+function addLesson(id,overrides={}){const lesson=LESSONS.find(x=>x.id===id);if(!lesson)return;const plans=$('#plans');const old=plans.querySelector(`[data-id="${CSS.escape(id)}"]`);if(old){old.scrollIntoView({behavior:'smooth',block:'start'});flash('ಈ ಅಧ್ಯಾಯ ಈಗಾಗಲೇ ಸೇರಿಸಲಾಗಿದೆ');return}plans.insertAdjacentHTML('beforeend',cardHtml(lesson,overrides));bindInputs();updateCount();saveAll()}
+function addSelectedLesson(){const id=$('#lessonPicker').value;if(!id){flash('ಮೊದಲು ಅಧ್ಯಾಯ ಆಯ್ಕೆಮಾಡಿ');return}addLesson(id);$('#lessonPicker').value=''}
+function removeCard(button){button.closest('.lesson-card').remove();updateCount();saveAll()}
+function clearPlans(){if(confirm('ಸೇರಿಸಿದ ಎಲ್ಲಾ ಪಾಠಯೋಜನೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಬೇಕೇ?')){$('#plans').innerHTML='';updateCount();saveAll();flash('ಯೋಜನೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ')}}
+function loadAllLessons(){if($('#plans').children.length&&!confirm('ಎಲ್ಲಾ ಅಧ್ಯಾಯಗಳನ್ನು ಮರುಸೇರಿಸಿದರೆ ಈಗಿರುವ ಸಂಪಾದನೆ ಬದಲಾಗುತ್ತದೆ. ಮುಂದುವರಿಸಬೇಕೇ?'))return;$('#plans').innerHTML='';LESSONS.forEach(l=>$('#plans').insertAdjacentHTML('beforeend',cardHtml(l)));bindInputs();updateCount();saveAll();flash('ಎಲ್ಲಾ ಅಧ್ಯಾಯಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ')}
+function updateCount(){const n=document.querySelectorAll('.lesson-card').length;$('#planCount').textContent=`${LESSONS.length}ರಲ್ಲಿ ${n} ಯೋಜನೆಗಳು`}
+function bindInputs(){document.querySelectorAll('#schoolInfo input, .lesson-card input, .lesson-card textarea').forEach(el=>{if(el.dataset.bound)return;el.addEventListener('input',()=>{if(el.classList.contains('f-title'))el.closest('.lesson-card').querySelector('.lesson-title h3').textContent=el.value;saveAll()});el.addEventListener('change',saveAll);el.dataset.bound='1'})}
+function collectCard(card){const value=selector=>card.querySelector(selector)?.value||'';return{id:card.dataset.id,title:value('.f-title'),genre:value('.f-genre'),author:value('.f-author'),pages:value('.f-pages'),periods:value('.f-periods'),theme:value('.f-theme'),outcomes:value('.f-outcomes'),prereq:value('.f-prereq'),values:value('.f-values'),focus:value('.f-focus'),project:value('.f-project'),homework:value('.f-homework'),support:value('.f-support'),extension:value('.f-extension'),note:value('.f-note'),teacherSign:value('.f-teacher-sign'),hmSign:value('.f-hm-sign'),followDate:value('.f-follow-date'),stages:[...card.querySelectorAll('tbody tr')].map(row=>[row.querySelector('.s-teacher').value,row.querySelector('.s-student').value,row.querySelector('.s-material').value,row.querySelector('.s-check').value,row.querySelector('.s-reflect').value])}}
+function schoolData(){return Object.fromEntries(['schoolName','taluk','district','academicYear','className','subject','teacherName','schoolDate'].map(id=>[id,$('#'+id).value]))}
+function currentState(){return{version:1,school:schoolData(),cards:[...document.querySelectorAll('.lesson-card')].map(collectCard)}}
+function saveAll(){const status=$('#saveStatus');try{localStorage.setItem(KEY,JSON.stringify(currentState()));if(status){status.textContent='● ಸ್ವಯಂ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ';clearTimeout(saveAll.timer);saveAll.timer=setTimeout(()=>{status.textContent='● ಸ್ವಯಂ ಸಂಗ್ರಹ ಸಿದ್ಧ'},1300)}}catch(error){if(status)status.textContent='● ಬ್ರೌಸರ್ ಸಂಗ್ರಹ ಲಭ್ಯವಿಲ್ಲ — ಬ್ಯಾಕಪ್ ಇಳಿಸಿಕೊಳ್ಳಿ'}}
+function loadState(){rebuildPicker();let state=null;try{const raw=localStorage.getItem(KEY);if(raw)state=JSON.parse(raw)}catch(error){}if(state?.school){Object.entries(state.school).forEach(([id,value])=>{const input=$('#'+id);if(input)input.value=value??''})}if(Array.isArray(state?.cards)){state.cards.forEach(card=>{if(LESSONS.some(l=>l.id===card.id))$('#plans').insertAdjacentHTML('beforeend',cardHtml(LESSONS.find(l=>l.id===card.id),card))})}else{LESSONS.forEach(l=>$('#plans').insertAdjacentHTML('beforeend',cardHtml(l)));saveAll()}updateCount();bindInputs()}
+function resourceLinks(){const url=esc(WEBSITE_SETTINGS.websiteUrl);return `<a class="resource-link" href="${url}" target="_blank" rel="noopener noreferrer">${esc(WEBSITE_SETTINGS.resourceCenterName)}</a><span aria-hidden="true">|</span><a class="resource-link" href="${url}" target="_blank" rel="noopener noreferrer">${esc(WEBSITE_SETTINGS.websiteName)}</a>`}
+function applyWebsiteSettings(){const a=$('#resourceCenterLink'),b=$('#websiteNameLink');if(a){a.textContent=WEBSITE_SETTINGS.resourceCenterName;a.href=WEBSITE_SETTINGS.websiteUrl}if(b){b.textContent=WEBSITE_SETTINGS.websiteName;b.href=WEBSITE_SETTINGS.websiteUrl}}
+function printSchoolStrip(s){return `<div class="school-strip"><span><b>ಶಾಲೆ:</b> ${printText(s.schoolName||'________________________')}</span><span><b>ತರಗತಿ:</b> ${printText(s.className||'7ನೇ ತರಗತಿ')}</span><span><b>ವಿಷಯ:</b> ${printText(s.subject||'ಗಣಿತ — ಭಾಗ 2')}</span><span><b>ಶಿಕ್ಷಕ:</b> ${printText(s.teacherName||'________________')}</span><span><b>ದಿನಾಂಕ:</b> ${printText(s.schoolDate||'____________')}</span></div>`}
+function printRows(rows,start,end){return rows.slice(start,end).map((r,i)=>{const stage=STAGES[start+i];return `<tr><td class="stage"><b>${stage[0]}</b><small>${stage[1]}</small></td><td>${printText(r[0])}</td><td>${printText(r[1])}</td><td>${printText(r[2])}</td><td>${printText(r[3])}</td><td>${printText(r[4]||'')}</td></tr>`}).join('')}
+function printTable(rows,start,end){return `<table class="p-table"><thead><tr><th>5E ಹಂತ</th><th>ಶಿಕ್ಷಕರ ಚಟುವಟಿಕೆ</th><th>ವಿದ್ಯಾರ್ಥಿಗಳ ಚಟುವಟಿಕೆ</th><th>ಬೋಧನಾ ಸಾಮಗ್ರಿ</th><th>ಮೌಲ್ಯಮಾಪನದ ಸಾಕ್ಷಿ</th><th>ಶಿಕ್ಷಕರ ಚಿಂತನೆ</th></tr></thead><tbody>${printRows(rows,start,end)}</tbody></table>`}
+function lessonPages(data,school){const source=LESSONS.find(x=>x.id===data.id)||{};const number=source.number||'ಅಧ್ಯಾಯ';const title=data.title||source.title||'';const rows=data.stages||source.stages||[];const sourceNote='ಮೂಲ ಪರಿಶೀಲನೆ: ಕರ್ನಾಟಕದ ಅಧಿಕೃತ 2026–27 ಕನ್ನಡ ಪಿಡಿಎಫ್ ತೆರೆಯಲಿಲ್ಲ; ಅಧ್ಯಾಯ ಶೀರ್ಷಿಕೆಗಳು ಲಭ್ಯ ಕನ್ನಡ ದ್ವಿತೀಯ ಪಟ್ಟಿಯಿಂದ, ಗಣಿತ ಕಲ್ಪನೆಗಳು ಅಧಿಕೃತ ಎನ್‌ಸಿಇಆರ್‌ಟಿ ಗಣಿತ ಪ್ರಕಾಶ ಭಾಗ 2ರಿಂದ. ಕನ್ನಡ ಆವೃತ್ತಿಯ ಪದಬಳಕೆ, ಕ್ರಮ, ಪುಟ ಮತ್ತು ಅವಧಿಯನ್ನು ಪರಿಶೀಲಿಸಿ.';const p1=`<section class="print-page"><div class="page-content">${printSchoolStrip(school)}<div class="lesson-title"><span>${printText(number)}</span><h1>${printText(title)}</h1><em>ಪಾಠಯೋಜನೆ — ಪುಟ 1 / 2</em></div><div class="meta"><div><b>ಪಾಠದ ಸ್ವರೂಪ</b>${printText(data.genre)}</div><div><b>ಮೂಲ / ಪಠ್ಯಪುಸ್ತಕ</b>${printText(data.author)}</div><div><b>ಪುಟ ಸಂಖ್ಯೆ</b>${printText(data.pages)}</div><div><b>ಬೋಧನಾ ಅವಧಿ</b>${printText(data.periods)}</div></div><div class="source-note">${printText(sourceNote)}</div><div class="brief"><div><h3>ವಿಷಯ / ಮುಖ್ಯ ಕಲ್ಪನೆ</h3><p>${printText(data.theme)}</p></div><div><h3>ಕಲಿಕೆಯ ನಿರೀಕ್ಷಿತ ಫಲಿತಾಂಶಗಳು</h3><p>${printText(data.outcomes)}</p></div><div><h3>ಪೂರ್ವಜ್ಞಾನ ಮತ್ತು ಮೌಲ್ಯ</h3><p><b>ಪೂರ್ವಜ್ಞಾನ:</b> ${printText(data.prereq)}<br><b>ಮೌಲ್ಯ:</b> ${printText(data.values)}</p></div></div>${printTable(rows,0,3)}</div><footer class="page-footer">${resourceLinks()}</footer></section>`;const p2=`<section class="print-page"><div class="page-content">${printSchoolStrip(school)}<div class="lesson-title"><span>${printText(number)}</span><h1>${printText(title)}</h1><em>ಪಾಠಯೋಜನೆ — ಪುಟ 2 / 2</em></div>${printTable(rows,3,5)}<div class="detail-grid"><div><h3>ಮುಖ್ಯ ಗಣಿತ ಕಲ್ಪನೆಗಳು</h3><p>${printText(data.focus)}</p></div><div><h3>ವಿಸ್ತರಣಾ ಚಟುವಟಿಕೆ / ಯೋಜನೆ</h3><p>${printText(data.project)}</p></div><div><h3>ಗೃಹಕಾರ್ಯ / ಮುಂದಿನ ಕಲಿಕೆ</h3><p>${printText(data.homework)}</p></div><div><h3>ಕಲಿಕೆಗೆ ಬೆಂಬಲ</h3><p>${printText(data.support)}</p></div><div><h3>ಮುನ್ನಡೆಯುವವರಿಗೆ ಸವಾಲು</h3><p>${printText(data.extension)}</p></div><div><h3>ಶಿಕ್ಷಕರ ಟಿಪ್ಪಣಿ</h3><p>${printText(data.note||'_______________________________________________')}</p></div></div><div class="rubric"><b>ಮೌಲ್ಯಮಾಪನ:</b><span>ಕಲ್ಪನೆ</span><span>ವಿಧಾನ</span><span>ಕಾರಣ</span><span>ಸಹಭಾಗಿತ್ವ</span></div><div class="sign"><span>ಶಿಕ್ಷಕರ ಸಹಿ: ${printText(data.teacherSign||'________________________')}</span><span>ಮುಖ್ಯಶಿಕ್ಷಕರ ಸಹಿ: ${printText(data.hmSign||'________________________')}</span><span>ಮುಂದುವರಿಕೆ ದಿನಾಂಕ: ${printText(data.followDate||'____________')}</span></div></div><footer class="page-footer">${resourceLinks()}</footer></section>`;return p1+p2}
+function openLandscapePrint(singleCard=null){const cards=singleCard?[singleCard]:[...document.querySelectorAll('.lesson-card')];if(!cards.length){alert('ಮುದ್ರಿಸಲು ಪಾಠಯೋಜನೆ ಇಲ್ಲ. ಮೊದಲು ಅಧ್ಯಾಯ ಸೇರಿಸಿ.');return}const win=window.open('','_blank');if(!win){alert('ಮುದ್ರಣ ಕಿಟಕಿ ತೆರೆಯಲು ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಅನುಮತಿ ನೀಡಿ.');return}const school=schoolData();const pages=cards.map(card=>lessonPages(collectCard(card),school)).join('');const styles=`<style>@page{size:A4 landscape;margin:7mm 8mm 10mm 8mm}*{box-sizing:border-box}html,body{margin:0;padding:0;color:#25312e;font-family:"Noto Sans Kannada","Nirmala UI","Tunga",Arial,sans-serif;font-size:9.1pt;line-height:1.28}.print-page{min-height:190mm;page-break-after:always;break-after:page;display:flex;flex-direction:column;break-inside:auto}.print-page:last-child{page-break-after:auto;break-after:auto}.page-content{flex:1;display:flex;flex-direction:column}.school-strip{display:flex;justify-content:space-between;gap:3mm;border-bottom:.35pt solid #c5d2c9;padding:0 0 1.2mm;font-size:7.7pt;color:#4b5a52}.lesson-title{display:flex;align-items:center;gap:3mm;border-bottom:1pt solid #dbae40;padding:1.8mm 0 1.5mm;margin-bottom:2mm}.lesson-title span{background:#174e45;color:#fff;border-radius:6mm;padding:1mm 2.5mm;font-size:8pt;font-weight:bold;white-space:nowrap}.lesson-title h1{font-family:"Noto Serif Kannada","Nirmala UI","Tunga",serif;color:#174e45;font-size:15pt;line-height:1.12;margin:0;flex:1}.lesson-title em{font-style:normal;color:#63716a;font-size:8pt}.meta{display:grid;grid-template-columns:1fr 1.4fr 1fr 1fr;gap:2mm;margin-bottom:1.5mm}.meta div,.brief>div,.detail-grid>div{border:.35pt solid #cfdbd1;border-radius:1.3mm;padding:1.3mm;background:#fffefa}.meta b{display:block;color:#174e45;font-size:7.7pt;margin-bottom:.2mm}.source-note{font-size:7.2pt;color:#685a3e;margin:0 0 1.4mm;padding:.5mm 1mm;border:.25pt solid #dfd0a7;background:#fffaf0}.brief{display:grid;grid-template-columns:1.15fr 1.5fr 1.1fr;gap:1.7mm;margin-bottom:1.7mm}.brief h3,.detail-grid h3{font-size:8.4pt;color:#174e45;margin:0 0 .5mm}.brief p,.detail-grid p{margin:0;font-size:8.3pt}.p-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:8.5pt}.p-table th,.p-table td{border:.35pt solid #c8d6cd;padding:1mm;vertical-align:top}.p-table th{background:#e4eee7;color:#163d35;text-align:center;font-size:8pt}.p-table th:nth-child(1){width:9%}.p-table th:nth-child(2),.p-table th:nth-child(3){width:26%}.p-table th:nth-child(4){width:13%}.p-table th:nth-child(5){width:17%}.p-table th:nth-child(6){width:9%}.stage{background:#f3f7ef;color:#174e45;text-align:center;font-size:8pt}.stage small{display:block;color:#59665f;font-size:7.3pt;margin-top:.4mm}.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.7mm;margin-top:1.8mm}.rubric{display:flex;gap:2mm;align-items:center;margin-top:2mm;border:.35pt solid #cde0d3;background:#f5fbf7;padding:1.3mm;font-size:7.5pt;color:#15583b}.rubric span{background:#fff;border:.3pt solid #cde0d3;padding:.7mm 1.4mm;border-radius:1mm}.sign{display:flex;justify-content:space-between;gap:7mm;margin-top:2.4mm;padding-top:1.2mm;border-top:.35pt solid #c8d0c8;font-size:7.7pt}.page-footer{margin-top:auto;border-top:.35pt solid #9caf9f;text-align:center;padding-top:1mm;font-size:9pt}.page-footer a{color:#174e45;text-decoration:underline;font-weight:bold}.page-footer span{padding:0 3mm;color:#b68b30}@media print{a{color:#174e45!important}}</style>`;win.document.open();win.document.write(`<!doctype html><html lang="kn"><head><meta charset="utf-8"><title>7ನೇ ತರಗತಿ ಕನ್ನಡ ಮಾಧ್ಯಮ ಗಣಿತ ಭಾಗ 2 — ಪಾಠಯೋಜನೆಗಳು</title>${styles}</head><body>${pages}</body></html>`);win.document.close();win.focus();setTimeout(()=>win.print(),400)}
+function printAll(){openLandscapePrint()}
+function printSingle(button){openLandscapePrint(button.closest('.lesson-card'))}
+function toggleCompact(){compact=!compact;document.body.classList.toggle('compact-mode',compact);$('#compactBtn').textContent=compact?'▤ ವಿಸ್ತೃತ ನೋಟ':'▤ ಸಂಕ್ಷಿಪ್ತ ನೋಟ';flash(compact?'ಸಂಕ್ಷಿಪ್ತ ನೋಟ ಆರಂಭಿಸಲಾಗಿದೆ':'ವಿಸ್ತೃತ ನೋಟ ಆರಂಭಿಸಲಾಗಿದೆ')}
+function flash(message){const status=$('#saveStatus');if(status){status.textContent='● '+message;clearTimeout(flash.timer);flash.timer=setTimeout(()=>status.textContent='● ಸ್ವಯಂ ಸಂಗ್ರಹ ಸಿದ್ಧ',1800)}}
+function downloadBackup(){const data=JSON.stringify(currentState(),null,2);const link=document.createElement('a');link.href=URL.createObjectURL(new Blob([data],{type:'application/json'}));link.download='7ನೇ-ತರಗತಿ-ಕನ್ನಡ-ಗಣಿತ-ಭಾಗ-2-ಬ್ಯಾಕಪ್.json';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1200);flash('ಬ್ಯಾಕಪ್ ಇಳಿಸಲಾಗಿದೆ')}
+function restoreBackup(event){const file=event.target.files?.[0];if(!file)return;const reader=new FileReader();reader.onload=()=>{try{const state=JSON.parse(reader.result);if(!Array.isArray(state.cards))throw new Error('invalid');localStorage.setItem(KEY,JSON.stringify(state));location.reload()}catch(error){alert('ಈ ಬ್ಯಾಕಪ್ ಫೈಲ್ ಸರಿಯಿಲ್ಲ ಅಥವಾ ಓದಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.')}finally{event.target.value=''}};reader.readAsText(file)}
+applyWebsiteSettings();
+loadState();
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a486ad1aed77ad27',t:'MTc5MTY0NjMzMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <!-- ಇದು ಮೊಬೈಲ್‌ನಲ್ಲಿಯೂ ಡೆಸ್ಕ್‌ಟಾಪ್ ವ್ಯೂ ಬರುವುದನ್ನು ಖಚಿತಪಡಿಸುತ್ತದೆ -->
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <title>ನಿಮ್ಮ ಪೇಜ್ ಶೀರ್ಷಿಕೆ</title>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+@media print{
+  .no-print{
+    display:none !important;
+  }
+}
+</style>
+
+<div class="no-print" style="text-align:center;margin:15px 0;">
+  <a href="https://bilingualmediumschools.blogspot.com/2026/04/home-page.html"
+     target="_blank"
+     style="display:inline-block;
+            background:#1565c0;
+            color:#fff;
+            text-decoration:none;
+            padding:10px 18px;
+            border-radius:8px;
+            font-weight:bold;
+            font-size:16px;">
+<br> ರಚನೆ: ಮನೋಹರ್ ಆರ್‌ ಕೆ.ಜಿ.ಎಫ್<br>
+    🌐 School Resource Centre – Click Here to Visit
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
